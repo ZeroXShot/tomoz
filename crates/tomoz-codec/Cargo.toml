@@ -1,0 +1,38 @@
+[package]
+name = "tomoz-codec"
+description = "Learned, deterministic lossless codec for medical image volumes"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+authors.workspace = true
+keywords.workspace = true
+categories = ["compression", "science", "multimedia::images"]
+
+[features]
+default = ["parallel"]
+# Encode and decode tiles on all cores.
+parallel = ["dep:rayon"]
+
+[dependencies]
+tomoz-entropy.workspace = true
+tomoz-nn.workspace = true
+thiserror.workspace = true
+crc32c.workspace = true
+sha2.workspace = true
+rayon = { workspace = true, optional = true }
+
+[dev-dependencies]
+proptest.workspace = true
+criterion.workspace = true
+serde_json.workspace = true
+
+[[bench]]
+name = "codec"
+harness = false
+
+[lints]
+workspace = true
