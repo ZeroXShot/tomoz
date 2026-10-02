@@ -1,0 +1,44 @@
+[package]
+name = "tomoz-gateway"
+description = "S3-compatible storage gateway that compacts DICOM series into Tomoz archives"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+authors.workspace = true
+keywords = ["dicom", "s3", "storage", "compression", "pacs"]
+categories = ["web-programming::http-server", "compression", "science"]
+
+[dependencies]
+tomoz-codec = { workspace = true, features = ["parallel"] }
+tomoz-archive.workspace = true
+tomoz-dicom.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+toml.workspace = true
+tokio.workspace = true
+hyper.workspace = true
+hyper-util.workspace = true
+http-body-util.workspace = true
+http.workspace = true
+bytes.workspace = true
+rusqlite.workspace = true
+sha2.workspace = true
+hmac.workspace = true
+md-5.workspace = true
+crc32fast.workspace = true
+crc32c.workspace = true
+percent-encoding.workspace = true
+httpdate.workspace = true
+lru.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+tokio = { workspace = true, features = ["test-util"] }
+
+[lints]
+workspace = true
