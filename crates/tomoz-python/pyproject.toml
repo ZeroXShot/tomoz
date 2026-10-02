@@ -1,0 +1,27 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+
+[project]
+name = "tomoz"
+description = "Learned lossless compression for medical image volumes"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [{ name = "ZeroXShot" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: System :: Archiving :: Compression",
+]
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/ZeroXShot/tomoz"
+
+[tool.maturin]
+python-source = "python"
+module-name = "tomoz._tomoz"
+features = ["pyo3/extension-module"]
