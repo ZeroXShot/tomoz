@@ -1,0 +1,44 @@
+{
+  "name": "tomoz",
+  "version": "0.1.0",
+  "description": "Learned, deterministic lossless compression for medical image volumes, in WebAssembly",
+  "type": "module",
+  "main": "./tomoz.mjs",
+  "types": "./tomoz.d.ts",
+  "exports": {
+    ".": {
+      "types": "./tomoz.d.ts",
+      "default": "./tomoz.mjs"
+    },
+    "./tomoz_wasm.wasm": "./tomoz_wasm.wasm"
+  },
+  "files": [
+    "tomoz.mjs",
+    "tomoz.d.ts",
+    "tomoz_wasm.wasm",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/tomoz.test.mjs",
+    "demo": "node demo/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "dicom",
+    "medical-imaging",
+    "compression",
+    "lossless",
+    "webassembly"
+  ],
+  "author": "ZeroXShot",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeroXShot/tomoz.git",
+    "directory": "crates/tomoz-wasm/js"
+  }
+}
