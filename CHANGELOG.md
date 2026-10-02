@@ -7,6 +7,21 @@ model formats are versioned separately (see [docs/format.md](docs/format.md)).
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-02
+
+### Changed
+
+- The JavaScript package is published as `@zeroxshot/tomoz` on npm.
+- Dependencies updated: `lru` 0.18 (fixes RUSTSEC-2026-0253), `rusqlite`
+  0.38, `zstd` 0.14, `toml`, and the GitHub Actions used by CI.
+
+### Added
+
+- Releases publish to crates.io, PyPI and npm automatically
+  (`scripts/release.sh`); Dependabot proposes weekly updates.
+
+## [0.1.0] - 2026-10-02
+
 ### Added
 
 - Volume codec: integer TZ1 predictor (12/30-48-48-6 MLP) with a linear head
