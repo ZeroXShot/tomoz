@@ -1,0 +1,45 @@
+name: Fuzz
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      seconds:
+        description: Seconds per target
+        default: "600"
+
+permissions:
+  contents: read
+
+jobs:
+  fuzz:
+    name: ${{ matrix.target }}
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [dicom_parse, codec_decode, codec_roundtrip, archive_open, archive_pack, entropy_decode, model_parse, gateway_parsers]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: rustup toolchain install nightly --profile minimal
+      - run: cargo +nightly install cargo-fuzz --locked
+      - uses: actions/cache@v4
+        with:
+          path: fuzz/corpus/${{ matrix.target }}
+          key: fuzz-corpus-${{ matrix.target }}-${{ github.run_id }}
+          restore-keys: fuzz-corpus-${{ matrix.target }}-
+      - name: Seed the corpus
+        shell: bash
+        run: |
+          mkdir -p "fuzz/corpus/${{ matrix.target }}"
+          if [ -d "fuzz/seeds/${{ matrix.target }}" ]; then cp fuzz/seeds/${{ matrix.target }}/* "fuzz/corpus/${{ matrix.target }}/"; fi
+      - name: Fuzz (address sanitizer, overflow checks)
+        run: >
+          cargo +nightly fuzz run ${{ matrix.target }} --debug-assertions --
+          -max_total_time=${{ inputs.seconds || 600 }} -rss_limit_mb=2048 -malloc_limit_mb=2048 -timeout=20
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crash-${{ matrix.target }}
+          path: fuzz/artifacts/${{ matrix.target }}
