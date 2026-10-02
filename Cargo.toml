@@ -24,7 +24,7 @@ default-members = [
 ]
 
 [workspace.package]
-version = "0.1.1"
+version = "0.2.0"
 edition = "2024"
 rust-version = "1.98"
 license = "Apache-2.0"
@@ -36,12 +36,12 @@ keywords = ["compression", "lossless", "medical-imaging", "dicom", "neural-netwo
 categories = ["compression", "science", "multimedia::images"]
 
 [workspace.dependencies]
-tomoz-entropy = { path = "crates/tomoz-entropy", version = "0.1.1" }
-tomoz-dicom = { path = "crates/tomoz-dicom", version = "0.1.1" }
-tomoz-nn = { path = "crates/tomoz-nn", version = "0.1.1" }
-tomoz-codec = { path = "crates/tomoz-codec", version = "0.1.1", default-features = false }
-tomoz-archive = { path = "crates/tomoz-archive", version = "0.1.1" }
-tomoz-gateway = { path = "crates/tomoz-gateway", version = "0.1.1" }
+tomoz-entropy = { path = "crates/tomoz-entropy", version = "0.2.0" }
+tomoz-dicom = { path = "crates/tomoz-dicom", version = "0.2.0" }
+tomoz-nn = { path = "crates/tomoz-nn", version = "0.2.0" }
+tomoz-codec = { path = "crates/tomoz-codec", version = "0.2.0", default-features = false }
+tomoz-archive = { path = "crates/tomoz-archive", version = "0.2.0" }
+tomoz-gateway = { path = "crates/tomoz-gateway", version = "0.2.0" }
 
 thiserror = "2.0"
 crc32c = "0.6"
