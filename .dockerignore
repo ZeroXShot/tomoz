@@ -1,0 +1,10 @@
+target/
+data/
+fuzz/target/
+fuzz/corpus/
+fuzz/artifacts/
+**/node_modules/
+**/__pycache__/
+**/.venv/
+crates/tomoz-wasm/js/tomoz_wasm.wasm
+.git/
