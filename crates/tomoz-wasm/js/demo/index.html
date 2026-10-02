@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tomoz Viewer</title>
+<meta name="description" content="Open, verify and compress medical image volumes with Tomoz, entirely in the browser.">
+<style>
+:root {
+  --paper: #efe9dc;
+  --ink: #1d1b16;
+  --muted: #5d574b;
+  --faint: #b8af9b;
+  --signal: #c4401c;
+  --stage: #e6dfcf;
+  --dither: none;
+  --mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: "IBM Plex Sans", "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="paper"]) {
+    --paper: #161512;
+    --ink: #e8e1d1;
+    --muted: #a39b8a;
+    --faint: #4b463c;
+    --signal: #ff7a3d;
+    --stage: #0e0d0b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="carbon"] {
+  --paper: #161512;
+  --ink: #e8e1d1;
+  --muted: #a39b8a;
+  --faint: #4b463c;
+  --signal: #ff7a3d;
+  --stage: #0e0d0b;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 14px/1.45 var(--sans);
+  min-height: 100vh;
+}
+canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
+h2 {
+  font: 600 11px/1 var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+h2::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 8px; vertical-align: 1px; background: var(--signal); }
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 16px;
+  border-bottom: 2px solid var(--ink);
+  flex-wrap: wrap;
+}
+.tagline { margin: 0; font: 12px/1.4 var(--mono); color: var(--muted); flex: 1; min-width: 240px; }
+.themes { display: flex; }
+.themes button + button { border-left: 0; }
+
+button, .button {
+  font: 600 11px/1 var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: inline-block;
+}
+button:hover:not(:disabled), .button:hover { background: var(--ink); color: var(--paper); }
+button:focus-visible, .button:focus-within, input:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+button:disabled { color: var(--faint); border-color: var(--faint); cursor: default; }
+button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+
+main {
+  display: grid;
+  grid-template-columns: minmax(300px, 380px) 1fr;
+  grid-template-areas: "source viewer" "tiles tiles" "log log";
+  gap: 0;
+}
+.panel { padding: 16px; border-bottom: 1px solid var(--ink); min-width: 0; }
+.source { grid-area: source; border-right: 1px solid var(--ink); }
+.viewer { grid-area: viewer; display: flex; flex-direction: column; min-height: 560px; }
+.tiles { grid-area: tiles; }
+.log { grid-area: log; }
+
+.actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 8px; }
+.hint { margin: 6px 0 0; font: 11px/1.4 var(--mono); color: var(--muted); }
+.status { display: flex; gap: 10px; align-items: flex-start; margin: 12px 0 20px; font: 12px/1.4 var(--mono); }
+.status canvas { flex: none; margin-top: 1px; }
+.status span { overflow-wrap: anywhere; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin: 0 0 12px;
+  font: 12px/1.35 var(--mono);
+  border-top: 1px solid var(--faint);
+}
+dt, dd { margin: 0; padding: 5px 0; border-bottom: 1px solid var(--faint); }
+dt { color: var(--muted); padding-right: 14px; text-transform: lowercase; }
+dd { overflow-wrap: anywhere; }
+dd.wide { font-size: 11px; }
+dl:empty::after { content: "nothing open"; grid-column: 1 / -1; color: var(--faint); padding: 5px 0; }
+
+.viewer-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.viewer-head h2 { margin-right: auto; }
+.viewer-head span { font: 12px/1 var(--mono); color: var(--muted); }
+#stage {
+  flex: 1;
+  margin: 10px 0;
+  border: 1px solid var(--ink);
+  background: var(--stage) var(--dither);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  min-height: 320px;
+  position: relative;
+}
+#view { cursor: crosshair; touch-action: none; }
+body:not(.loaded) #view { display: none; }
+.empty { font: 12px/1.6 var(--mono); color: var(--muted); text-align: center; padding: 24px; margin: 0; }
+body.loaded .empty { display: none; }
+body.dragging #stage { outline: 2px dashed var(--signal); outline-offset: -8px; }
+input[type="range"] { width: 100%; accent-color: var(--signal); margin: 0; }
+
+.tiles p { margin: 0 0 10px; font: 11px/1.4 var(--mono); color: var(--muted); }
+#log { list-style: none; margin: 0; padding: 0; font: 12px/1.5 var(--mono); max-height: 180px; overflow: auto; }
+#log li { display: flex; gap: 14px; }
+#log time { color: var(--muted); flex: none; }
+footer { padding: 14px 16px 24px; font: 11px/1.5 var(--mono); color: var(--muted); }
+footer a { color: var(--ink); }
+
+@media (max-width: 860px) {
+  main { grid-template-columns: 1fr; grid-template-areas: "source" "viewer" "tiles" "log"; }
+  .source { border-right: 0; }
+  .viewer { min-height: 420px; }
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <canvas id="wordmark" role="img" aria-label="Tomoz"></canvas>
+  <p class="tagline">lossless codec for medical image volumes, running as WebAssembly in this page. Files never leave the browser.</p>
+  <div class="themes" role="group" aria-label="Theme">
+    <button type="button" data-set-theme="paper">Paper</button><button type="button" data-set-theme="carbon">Carbon</button>
+  </div>
+</header>
+<main>
+  <section class="panel source">
+    <h2>Source</h2>
+    <div class="actions">
+      <label class="button">Open .tmz or .npy<input id="file" type="file" accept=".tmz,.npy" hidden></label>
+      <button type="button" id="phantom">Compress a sample CT</button>
+    </div>
+    <p class="hint">Or drop a file on the page. A .npy array (8- or 16-bit integers, 2-D or 3-D) is compressed here first.</p>
+    <p class="status"><canvas id="status-lamp" width="16" height="16"></canvas><span id="status"></span></p>
+    <h2>Header</h2>
+    <dl id="header"></dl>
+    <div class="actions">
+      <button type="button" id="verify" disabled>Verify full decode</button>
+      <button type="button" id="save" hidden>Save .tmz</button>
+    </div>
+    <p class="status"><canvas id="verify-lamp" width="16" height="16"></canvas><span id="verify-result"></span></p>
+  </section>
+  <section class="panel viewer">
+    <div class="viewer-head">
+      <h2>Slice</h2>
+      <span id="slice-label"></span>
+      <span id="wl"></span>
+      <button type="button" id="auto">Auto W/L</button>
+    </div>
+    <div id="stage">
+      <canvas id="view" role="img" aria-label="Current slice"></canvas>
+      <p class="empty">No volume open.<br>Slices are decoded on demand: only the tiles of the slab on screen.</p>
+    </div>
+    <input id="slice" type="range" min="0" max="0" value="0" disabled aria-label="Slice">
+    <p class="hint">Mouse wheel, arrow keys or the slider move through slices. Drag on the image to set window and level.</p>
+  </section>
+  <section class="panel tiles">
+    <h2>Tiles</h2>
+    <p>Columns are slabs of slices, rows are stripes of image rows; each tile decodes on its own. Solid: the slab on screen. Dithered: decoded and cached. Outline: never decoded.</p>
+    <canvas id="tiles"></canvas>
+  </section>
+  <section class="panel log">
+    <h2>Log</h2>
+    <ol id="log"></ol>
+  </section>
+</main>
+<footer>
+  Tomoz is open source (Apache-2.0). The decoder in this page computes exactly the same integers as the native library, so the SHA-256 check above holds on every platform.
+</footer>
+<script type="module" src="viewer.mjs"></script>
+</body>
+</html>
