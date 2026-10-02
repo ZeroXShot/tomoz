@@ -1,0 +1,85 @@
+[package]
+name = "tomoz-fuzz"
+version = "0.0.0"
+edition = "2024"
+publish = false
+description = "Fuzz targets for every parser of untrusted input in Tomoz (cargo fuzz)"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+arbitrary = { version = "1", features = ["derive"] }
+crc32c = "0.6"
+tomoz-entropy = { path = "../crates/tomoz-entropy" }
+tomoz-dicom = { path = "../crates/tomoz-dicom" }
+tomoz-codec = { path = "../crates/tomoz-codec", default-features = false }
+tomoz-archive = { path = "../crates/tomoz-archive" }
+tomoz-gateway = { path = "../crates/tomoz-gateway" }
+
+# Not part of the main workspace: it needs nightly and cargo-fuzz.
+[workspace]
+members = ["."]
+
+[profile.release]
+debug = 1
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "dicom_parse"
+path = "fuzz_targets/dicom_parse.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "codec_decode"
+path = "fuzz_targets/codec_decode.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "codec_roundtrip"
+path = "fuzz_targets/codec_roundtrip.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "archive_open"
+path = "fuzz_targets/archive_open.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "archive_pack"
+path = "fuzz_targets/archive_pack.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "entropy_decode"
+path = "fuzz_targets/entropy_decode.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "model_parse"
+path = "fuzz_targets/model_parse.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "gateway_parsers"
+path = "fuzz_targets/gateway_parsers.rs"
+test = false
+doc = false
+bench = false
