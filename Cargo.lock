@@ -1486,7 +1486,7 @@ checksum = "7d56353a2a665ad0f41a421187180aab746c8c325620617ad883a99a1cbe66d2"
 
 [[package]]
 name = "tomoz-archive"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "crc32c",
  "proptest",
@@ -1499,7 +1499,7 @@ dependencies = [
 
 [[package]]
 name = "tomoz-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "clap",
@@ -1517,7 +1517,7 @@ dependencies = [
 
 [[package]]
 name = "tomoz-codec"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "crc32c",
  "criterion",
@@ -1532,7 +1532,7 @@ dependencies = [
 
 [[package]]
 name = "tomoz-dicom"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "proptest",
  "thiserror",
@@ -1540,7 +1540,7 @@ dependencies = [
 
 [[package]]
 name = "tomoz-entropy"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "criterion",
  "proptest",
@@ -1548,7 +1548,7 @@ dependencies = [
 
 [[package]]
 name = "tomoz-gateway"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "bytes",
  "crc32c",
@@ -1577,7 +1577,7 @@ dependencies = [
 
 [[package]]
 name = "tomoz-nn"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "criterion",
  "proptest",
@@ -1586,7 +1586,7 @@ dependencies = [
 
 [[package]]
 name = "tomoz-python"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "numpy",
  "pyo3",
@@ -1596,7 +1596,7 @@ dependencies = [
 
 [[package]]
 name = "tomoz-wasm"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "tomoz-codec",
 ]

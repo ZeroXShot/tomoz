@@ -1,6 +1,6 @@
 {
   "name": "@zeroxshot/tomoz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Learned, deterministic lossless compression for medical image volumes, in WebAssembly",
   "type": "module",
   "main": "./tomoz.mjs",
