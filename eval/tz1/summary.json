@@ -1,0 +1,595 @@
+{
+  "volumes": 37,
+  "codecs": [
+    "htj2k",
+    "jpeg-2000",
+    "jpeg-ls",
+    "jpeg-xl-e3",
+    "jpeg-xl-e7",
+    "tomoz",
+    "tomoz-mt",
+    "zstd-19"
+  ],
+  "lossless_failures": [],
+  "groups": {
+    "all": {
+      "volumes": 37,
+      "codecs": {
+        "htj2k": {
+          "mean_bits_per_sample": 5.1708,
+          "encode_mb_per_s": 121.37,
+          "decode_mb_per_s": 260.57,
+          "tomoz_saving_percent": 16.15,
+          "tomoz_saving_ci95": [
+            13.54,
+            18.75
+          ],
+          "tomoz_smaller_on": "37/37"
+        },
+        "jpeg-2000": {
+          "mean_bits_per_sample": 4.9089,
+          "encode_mb_per_s": 18.51,
+          "decode_mb_per_s": 20.86,
+          "tomoz_saving_percent": 11.38,
+          "tomoz_saving_ci95": [
+            8.69,
+            14.13
+          ],
+          "tomoz_smaller_on": "37/37"
+        },
+        "jpeg-ls": {
+          "mean_bits_per_sample": 4.8171,
+          "encode_mb_per_s": 109.08,
+          "decode_mb_per_s": 130.79,
+          "tomoz_saving_percent": 10.04,
+          "tomoz_saving_ci95": [
+            7.21,
+            13.0
+          ],
+          "tomoz_smaller_on": "34/37"
+        },
+        "jpeg-xl-e3": {
+          "mean_bits_per_sample": 4.6472,
+          "encode_mb_per_s": 31.35,
+          "decode_mb_per_s": 44.43,
+          "tomoz_saving_percent": 6.54,
+          "tomoz_saving_ci95": [
+            4.52,
+            8.77
+          ],
+          "tomoz_smaller_on": "32/37"
+        },
+        "jpeg-xl-e7": {
+          "mean_bits_per_sample": 4.5587,
+          "encode_mb_per_s": 3.33,
+          "decode_mb_per_s": 23.93,
+          "tomoz_saving_percent": 4.11,
+          "tomoz_saving_ci95": [
+            2.51,
+            5.76
+          ],
+          "tomoz_smaller_on": "30/37"
+        },
+        "tomoz": {
+          "mean_bits_per_sample": 4.3917,
+          "encode_mb_per_s": 9.8,
+          "decode_mb_per_s": 10.07
+        },
+        "tomoz-mt": {
+          "mean_bits_per_sample": 4.3917,
+          "encode_mb_per_s": 25.77,
+          "decode_mb_per_s": 27.84
+        },
+        "zstd-19": {
+          "mean_bits_per_sample": 6.32,
+          "encode_mb_per_s": 1.86,
+          "decode_mb_per_s": 261.85,
+          "tomoz_saving_percent": 31.24,
+          "tomoz_saving_ci95": [
+            28.74,
+            33.65
+          ],
+          "tomoz_smaller_on": "37/37"
+        }
+      }
+    },
+    "CR": {
+      "volumes": 3,
+      "codecs": {
+        "htj2k": {
+          "mean_bits_per_sample": 4.8376,
+          "encode_mb_per_s": 110.19,
+          "decode_mb_per_s": 242.37,
+          "tomoz_saving_percent": 9.34,
+          "tomoz_saving_ci95": [
+            7.43,
+            12.57
+          ],
+          "tomoz_smaller_on": "3/3"
+        },
+        "jpeg-2000": {
+          "mean_bits_per_sample": 4.5315,
+          "encode_mb_per_s": 19.47,
+          "decode_mb_per_s": 21.97,
+          "tomoz_saving_percent": 3.2,
+          "tomoz_saving_ci95": [
+            1.18,
+            7.0
+          ],
+          "tomoz_smaller_on": "3/3"
+        },
+        "jpeg-ls": {
+          "mean_bits_per_sample": 4.5689,
+          "encode_mb_per_s": 100.57,
+          "decode_mb_per_s": 127.06,
+          "tomoz_saving_percent": 4.04,
+          "tomoz_saving_ci95": [
+            2.72,
+            5.97
+          ],
+          "tomoz_smaller_on": "3/3"
+        },
+        "jpeg-xl-e3": {
+          "mean_bits_per_sample": 4.455,
+          "encode_mb_per_s": 29.06,
+          "decode_mb_per_s": 48.63,
+          "tomoz_saving_percent": 1.54,
+          "tomoz_saving_ci95": [
+            -0.41,
+            5.37
+          ],
+          "tomoz_smaller_on": "1/3"
+        },
+        "jpeg-xl-e7": {
+          "mean_bits_per_sample": 4.3707,
+          "encode_mb_per_s": 4.94,
+          "decode_mb_per_s": 26.61,
+          "tomoz_saving_percent": -0.31,
+          "tomoz_saving_ci95": [
+            -0.91,
+            0.78
+          ],
+          "tomoz_smaller_on": "1/3"
+        },
+        "tomoz": {
+          "mean_bits_per_sample": 4.3843,
+          "encode_mb_per_s": 11.58,
+          "decode_mb_per_s": 11.63
+        },
+        "tomoz-mt": {
+          "mean_bits_per_sample": 4.3843,
+          "encode_mb_per_s": 31.6,
+          "decode_mb_per_s": 34.76
+        },
+        "zstd-19": {
+          "mean_bits_per_sample": 6.3178,
+          "encode_mb_per_s": 2.2,
+          "decode_mb_per_s": 410.79,
+          "tomoz_saving_percent": 30.52,
+          "tomoz_saving_ci95": [
+            27.77,
+            32.74
+          ],
+          "tomoz_smaller_on": "3/3"
+        }
+      }
+    },
+    "CT": {
+      "volumes": 12,
+      "codecs": {
+        "htj2k": {
+          "mean_bits_per_sample": 5.0577,
+          "encode_mb_per_s": 118.72,
+          "decode_mb_per_s": 258.03,
+          "tomoz_saving_percent": 17.87,
+          "tomoz_saving_ci95": [
+            15.69,
+            20.18
+          ],
+          "tomoz_smaller_on": "12/12"
+        },
+        "jpeg-2000": {
+          "mean_bits_per_sample": 4.7361,
+          "encode_mb_per_s": 18.21,
+          "decode_mb_per_s": 20.6,
+          "tomoz_saving_percent": 12.13,
+          "tomoz_saving_ci95": [
+            9.98,
+            14.5
+          ],
+          "tomoz_smaller_on": "12/12"
+        },
+        "jpeg-ls": {
+          "mean_bits_per_sample": 4.5923,
+          "encode_mb_per_s": 107.5,
+          "decode_mb_per_s": 129.17,
+          "tomoz_saving_percent": 9.45,
+          "tomoz_saving_ci95": [
+            7.68,
+            11.33
+          ],
+          "tomoz_smaller_on": "12/12"
+        },
+        "jpeg-xl-e3": {
+          "mean_bits_per_sample": 4.4589,
+          "encode_mb_per_s": 31.68,
+          "decode_mb_per_s": 44.35,
+          "tomoz_saving_percent": 6.57,
+          "tomoz_saving_ci95": [
+            5.02,
+            8.26
+          ],
+          "tomoz_smaller_on": "12/12"
+        },
+        "jpeg-xl-e7": {
+          "mean_bits_per_sample": 4.366,
+          "encode_mb_per_s": 3.38,
+          "decode_mb_per_s": 23.66,
+          "tomoz_saving_percent": 4.6,
+          "tomoz_saving_ci95": [
+            3.1,
+            6.24
+          ],
+          "tomoz_smaller_on": "11/12"
+        },
+        "tomoz": {
+          "mean_bits_per_sample": 4.1659,
+          "encode_mb_per_s": 9.51,
+          "decode_mb_per_s": 9.78
+        },
+        "tomoz-mt": {
+          "mean_bits_per_sample": 4.1659,
+          "encode_mb_per_s": 25.61,
+          "decode_mb_per_s": 27.7
+        },
+        "zstd-19": {
+          "mean_bits_per_sample": 6.3206,
+          "encode_mb_per_s": 1.73,
+          "decode_mb_per_s": 240.11,
+          "tomoz_saving_percent": 34.6,
+          "tomoz_saving_ci95": [
+            31.08,
+            37.13
+          ],
+          "tomoz_smaller_on": "12/12"
+        }
+      }
+    },
+    "DX": {
+      "volumes": 3,
+      "codecs": {
+        "htj2k": {
+          "mean_bits_per_sample": 10.4211,
+          "encode_mb_per_s": 100.07,
+          "decode_mb_per_s": 223.27,
+          "tomoz_saving_percent": 4.68,
+          "tomoz_saving_ci95": [
+            4.04,
+            5.46
+          ],
+          "tomoz_smaller_on": "3/3"
+        },
+        "jpeg-2000": {
+          "mean_bits_per_sample": 10.1237,
+          "encode_mb_per_s": 10.65,
+          "decode_mb_per_s": 11.74,
+          "tomoz_saving_percent": 1.74,
+          "tomoz_saving_ci95": [
+            1.25,
+            2.18
+          ],
+          "tomoz_smaller_on": "3/3"
+        },
+        "jpeg-ls": {
+          "mean_bits_per_sample": 9.9282,
+          "encode_mb_per_s": 73.45,
+          "decode_mb_per_s": 86.03,
+          "tomoz_saving_percent": -0.19,
+          "tomoz_saving_ci95": [
+            -0.6,
+            0.08
+          ],
+          "tomoz_smaller_on": "1/3"
+        },
+        "jpeg-xl-e3": {
+          "mean_bits_per_sample": 9.8938,
+          "encode_mb_per_s": 30.19,
+          "decode_mb_per_s": 46.62,
+          "tomoz_saving_percent": -0.43,
+          "tomoz_saving_ci95": [
+            -0.73,
+            0.16
+          ],
+          "tomoz_smaller_on": "1/3"
+        },
+        "jpeg-xl-e7": {
+          "mean_bits_per_sample": 10.0129,
+          "encode_mb_per_s": 1.97,
+          "decode_mb_per_s": 19.66,
+          "tomoz_saving_percent": 0.78,
+          "tomoz_saving_ci95": [
+            0.4,
+            1.51
+          ],
+          "tomoz_smaller_on": "3/3"
+        },
+        "tomoz": {
+          "mean_bits_per_sample": 9.9424,
+          "encode_mb_per_s": 11.39,
+          "decode_mb_per_s": 11.43
+        },
+        "tomoz-mt": {
+          "mean_bits_per_sample": 9.9424,
+          "encode_mb_per_s": 29.37,
+          "decode_mb_per_s": 29.89
+        },
+        "zstd-19": {
+          "mean_bits_per_sample": 12.8817,
+          "encode_mb_per_s": 2.77,
+          "decode_mb_per_s": 297.36,
+          "tomoz_saving_percent": 22.69,
+          "tomoz_saving_ci95": [
+            21.57,
+            24.79
+          ],
+          "tomoz_smaller_on": "3/3"
+        }
+      }
+    },
+    "MG": {
+      "volumes": 4,
+      "codecs": {
+        "htj2k": {
+          "mean_bits_per_sample": 1.2667,
+          "encode_mb_per_s": 320.02,
+          "decode_mb_per_s": 538.74,
+          "tomoz_saving_percent": 6.48,
+          "tomoz_saving_ci95": [
+            5.98,
+            6.98
+          ],
+          "tomoz_smaller_on": "4/4"
+        },
+        "jpeg-2000": {
+          "mean_bits_per_sample": 1.1989,
+          "encode_mb_per_s": 63.35,
+          "decode_mb_per_s": 53.7,
+          "tomoz_saving_percent": 1.18,
+          "tomoz_saving_ci95": [
+            0.64,
+            1.71
+          ],
+          "tomoz_smaller_on": "4/4"
+        },
+        "jpeg-ls": {
+          "mean_bits_per_sample": 1.1985,
+          "encode_mb_per_s": 348.06,
+          "decode_mb_per_s": 464.13,
+          "tomoz_saving_percent": 1.08,
+          "tomoz_saving_ci95": [
+            0.13,
+            1.75
+          ],
+          "tomoz_smaller_on": "3/4"
+        },
+        "jpeg-xl-e3": {
+          "mean_bits_per_sample": 1.1892,
+          "encode_mb_per_s": 40.48,
+          "decode_mb_per_s": 53.81,
+          "tomoz_saving_percent": 0.41,
+          "tomoz_saving_ci95": [
+            -0.04,
+            0.93
+          ],
+          "tomoz_smaller_on": "3/4"
+        },
+        "jpeg-xl-e7": {
+          "mean_bits_per_sample": 1.1825,
+          "encode_mb_per_s": 8.74,
+          "decode_mb_per_s": 42.07,
+          "tomoz_saving_percent": -0.17,
+          "tomoz_saving_ci95": [
+            -0.59,
+            0.22
+          ],
+          "tomoz_smaller_on": "2/4"
+        },
+        "tomoz": {
+          "mean_bits_per_sample": 1.1849,
+          "encode_mb_per_s": 14.76,
+          "decode_mb_per_s": 15.67
+        },
+        "tomoz-mt": {
+          "mean_bits_per_sample": 1.1849,
+          "encode_mb_per_s": 42.61,
+          "decode_mb_per_s": 49.71
+        },
+        "zstd-19": {
+          "mean_bits_per_sample": 1.5424,
+          "encode_mb_per_s": 24.13,
+          "decode_mb_per_s": 2223.15,
+          "tomoz_saving_percent": 23.04,
+          "tomoz_saving_ci95": [
+            19.92,
+            25.44
+          ],
+          "tomoz_smaller_on": "4/4"
+        }
+      }
+    },
+    "MR": {
+      "volumes": 9,
+      "codecs": {
+        "htj2k": {
+          "mean_bits_per_sample": 5.9326,
+          "encode_mb_per_s": 104.38,
+          "decode_mb_per_s": 229.79,
+          "tomoz_saving_percent": 16.22,
+          "tomoz_saving_ci95": [
+            12.62,
+            20.28
+          ],
+          "tomoz_smaller_on": "9/9"
+        },
+        "jpeg-2000": {
+          "mean_bits_per_sample": 5.6427,
+          "encode_mb_per_s": 15.25,
+          "decode_mb_per_s": 17.35,
+          "tomoz_saving_percent": 11.76,
+          "tomoz_saving_ci95": [
+            8.25,
+            15.65
+          ],
+          "tomoz_smaller_on": "9/9"
+        },
+        "jpeg-ls": {
+          "mean_bits_per_sample": 5.6015,
+          "encode_mb_per_s": 83.74,
+          "decode_mb_per_s": 99.71,
+          "tomoz_saving_percent": 11.49,
+          "tomoz_saving_ci95": [
+            5.6,
+            18.5
+          ],
+          "tomoz_smaller_on": "9/9"
+        },
+        "jpeg-xl-e3": {
+          "mean_bits_per_sample": 5.3202,
+          "encode_mb_per_s": 28.89,
+          "decode_mb_per_s": 41.1,
+          "tomoz_saving_percent": 6.07,
+          "tomoz_saving_ci95": [
+            3.51,
+            9.04
+          ],
+          "tomoz_smaller_on": "9/9"
+        },
+        "jpeg-xl-e7": {
+          "mean_bits_per_sample": 5.2014,
+          "encode_mb_per_s": 2.58,
+          "decode_mb_per_s": 20.73,
+          "tomoz_saving_percent": 3.46,
+          "tomoz_saving_ci95": [
+            0.02,
+            6.93
+          ],
+          "tomoz_smaller_on": "7/9"
+        },
+        "tomoz": {
+          "mean_bits_per_sample": 5.0523,
+          "encode_mb_per_s": 9.37,
+          "decode_mb_per_s": 9.4
+        },
+        "tomoz-mt": {
+          "mean_bits_per_sample": 5.0523,
+          "encode_mb_per_s": 19.44,
+          "decode_mb_per_s": 20.3
+        },
+        "zstd-19": {
+          "mean_bits_per_sample": 7.0729,
+          "encode_mb_per_s": 1.52,
+          "decode_mb_per_s": 223.29,
+          "tomoz_saving_percent": 29.15,
+          "tomoz_saving_ci95": [
+            23.41,
+            35.14
+          ],
+          "tomoz_smaller_on": "9/9"
+        }
+      }
+    },
+    "PT": {
+      "volumes": 6,
+      "codecs": {
+        "htj2k": {
+          "mean_bits_per_sample": 4.3987,
+          "encode_mb_per_s": 134.6,
+          "decode_mb_per_s": 252.28,
+          "tomoz_saving_percent": 28.21,
+          "tomoz_saving_ci95": [
+            25.09,
+            32.72
+          ],
+          "tomoz_smaller_on": "6/6"
+        },
+        "jpeg-2000": {
+          "mean_bits_per_sample": 4.2086,
+          "encode_mb_per_s": 23.11,
+          "decode_mb_per_s": 27.25,
+          "tomoz_saving_percent": 25.03,
+          "tomoz_saving_ci95": [
+            21.94,
+            29.74
+          ],
+          "tomoz_smaller_on": "6/6"
+        },
+        "jpeg-ls": {
+          "mean_bits_per_sample": 4.0708,
+          "encode_mb_per_s": 146.88,
+          "decode_mb_per_s": 167.91,
+          "tomoz_saving_percent": 23.16,
+          "tomoz_saving_ci95": [
+            18.8,
+            28.61
+          ],
+          "tomoz_smaller_on": "6/6"
+        },
+        "jpeg-xl-e3": {
+          "mean_bits_per_sample": 3.7924,
+          "encode_mb_per_s": 27.08,
+          "decode_mb_per_s": 42.88,
+          "tomoz_saving_percent": 17.24,
+          "tomoz_saving_ci95": [
+            12.61,
+            23.36
+          ],
+          "tomoz_smaller_on": "6/6"
+        },
+        "jpeg-xl-e7": {
+          "mean_bits_per_sample": 3.5975,
+          "encode_mb_per_s": 3.1,
+          "decode_mb_per_s": 25.72,
+          "tomoz_saving_percent": 10.82,
+          "tomoz_saving_ci95": [
+            7.06,
+            14.77
+          ],
+          "tomoz_smaller_on": "6/6"
+        },
+        "tomoz": {
+          "mean_bits_per_sample": 3.2184,
+          "encode_mb_per_s": 10.66,
+          "decode_mb_per_s": 11.08
+        },
+        "tomoz-mt": {
+          "mean_bits_per_sample": 3.2184,
+          "encode_mb_per_s": 30.23,
+          "decode_mb_per_s": 34.18
+        },
+        "zstd-19": {
+          "mean_bits_per_sample": 5.0948,
+          "encode_mb_per_s": 2.68,
+          "decode_mb_per_s": 541.49,
+          "tomoz_saving_percent": 37.75,
+          "tomoz_saving_ci95": [
+            35.13,
+            41.07
+          ],
+          "tomoz_smaller_on": "6/6"
+        }
+      }
+    }
+  },
+  "machine": {
+    "machine": "aarch64",
+    "cpus": 4,
+    "python": "3.12.3"
+  },
+  "software": {
+    "tomoz_models": {
+      "2d": "78f954e342dbbd3eef09fc52ab780e42",
+      "3d": "fe411d9822c41fac88240c959e0e48ea"
+    },
+    "imagecodecs": "2026.8.16"
+  }
+}
