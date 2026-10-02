@@ -770,10 +770,10 @@ impl Store {
         )?;
         let total = |l: &Listing| l.objects.len() + l.prefixes.len();
         'scan: loop {
-            let batch = 256;
+            const BATCH: usize = 256;
             let stmt = if inclusive { &mut stmt_incl } else { &mut stmt_excl };
             let rows: Vec<ObjectMeta> = stmt
-                .query_map(params![bucket, cursor, batch], |r| {
+                .query_map(params![bucket, cursor, BATCH as i64], |r| {
                     Ok(ObjectMeta {
                         key: r.get(0)?,
                         size: r.get::<_, i64>(1)? as u64,
@@ -812,7 +812,7 @@ impl Store {
                 }
                 listing.objects.push(o);
             }
-            if n < batch {
+            if n < BATCH {
                 break;
             }
         }
