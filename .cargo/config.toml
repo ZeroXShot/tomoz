@@ -1,0 +1,4 @@
+# WebAssembly builds use 128-bit SIMD (all current browsers and Node.js
+# support it). The SIMD kernel computes the same integers as the scalar one.
+[target.wasm32-unknown-unknown]
+rustflags = ["-C", "target-feature=+simd128"]

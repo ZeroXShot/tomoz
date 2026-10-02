@@ -1,0 +1,32 @@
+# Build outputs
+/target/
+/fuzz/target/
+/fuzz/corpus/
+/fuzz/artifacts/
+/fuzz/coverage/
+node_modules/
+crates/tomoz-wasm/js/tomoz_wasm.wasm
+*.so
+*.dylib
+*.pyd
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+/crates/tomoz-python/dist/
+/lab/dist/
+
+# Datasets and local runs (downloaded or produced; never committed)
+/data/
+/tomoz-data/
+/lab/runs/
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
