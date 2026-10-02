@@ -1,0 +1,49 @@
+name: Demo site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: rustup toolchain install
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Build the WebAssembly module and assemble the site
+        working-directory: crates/tomoz-wasm/js
+        run: |
+          npm run build
+          npm test
+          mkdir -p "$RUNNER_TEMP/site"
+          cp tomoz.mjs tomoz_wasm.wasm "$RUNNER_TEMP/site/"
+          cp -r demo "$RUNNER_TEMP/site/demo"
+          rm "$RUNNER_TEMP/site/demo/serve.mjs"
+          printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=demo/"><title>Tomoz</title><a href="demo/">Tomoz viewer</a>\n' > "$RUNNER_TEMP/site/index.html"
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
