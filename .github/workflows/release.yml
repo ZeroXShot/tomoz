@@ -164,7 +164,11 @@ jobs:
           node-version: 24
           registry-url: https://registry.npmjs.org
       - run: npm install -g npm@latest
+      # Trusted publishing when configured on npmjs.com; otherwise the
+      # NPM_TOKEN secret of the npm environment (a granular token).
       - run: npm publish dist/*.tgz --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   image:
     name: Container image
