@@ -64,23 +64,23 @@ and 107.4 MB → 41.3 MB, every file restored byte for byte.
 | **DICOM archives** (`tomoz-archive`) | A series in one `.tmzd` file, every DICOM file restored byte for byte (headers, padding, private tags, odd bit layouts) |
 | **S3 gateway** (`tomoz serve`) | Point Orthanc, dcm4chee or any S3 client at it; it stores uploads, compacts quiet series into archives after verifying them, and serves the original bytes |
 | **CLI** (`tomoz`) | Encode/decode `.npy` and NIfTI, pack/unpack DICOM, benchmark |
-| **Python** (`tomoz` package) | NumPy in, NumPy out; DICOM archives; abi3 wheels for Linux, macOS and Windows from the release workflow |
-| **JavaScript** (`tomoz` package) | WebAssembly build for browsers and Node.js, and a [viewer](crates/tomoz-wasm/js/demo/) that decodes in the page |
+| **Python** (`pip install tomoz`) | NumPy in, NumPy out; DICOM archives; abi3 wheels for Linux, macOS and Windows |
+| **JavaScript** (`npm install @zeroxshot/tomoz`) | WebAssembly build for browsers and Node.js, and a [viewer](crates/tomoz-wasm/js/demo/) that decodes in the page |
 | **Lab** (`lab/`) | Public TCIA datasets pinned by hash, quantisation-aware training, golden vectors, the benchmark |
 
 ## Quick start
 
-**Command line** (Rust 1.98+; or download a release binary):
+**Command line** (Rust 1.98+, or a binary from the [releases](https://github.com/ZeroXShot/tomoz/releases)):
 
 ```sh
-cargo install --git https://github.com/ZeroXShot/tomoz tomoz-cli
+cargo install tomoz-cli
 tomoz encode ct.npy                 # → ct.npy.tmz
 tomoz decode ct.npy.tmz -o back.npy
 tomoz dicom pack series/ -o series.tmzd
 tomoz dicom unpack series.tmzd -o restored/   # identical files
 ```
 
-**Python** (`maturin develop --release` in `crates/tomoz-python`, or a release wheel):
+**Python** (`pip install tomoz`):
 
 ```python
 import numpy as np, tomoz
@@ -91,10 +91,10 @@ assert np.array_equal(tomoz.decode(data), volume)
 print(tomoz.info(data)["bits_per_sample"])
 ```
 
-**Browser / Node.js** (`npm run build` in `crates/tomoz-wasm/js`):
+**Browser / Node.js** (`npm install @zeroxshot/tomoz`):
 
 ```js
-import { load } from "tomoz";
+import { load } from "@zeroxshot/tomoz";
 const tomoz = await load();
 const { depth, height, width, data } = tomoz.decode(bytes, { slices: [40, 42] });
 ```
