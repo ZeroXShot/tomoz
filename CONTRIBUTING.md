@@ -52,6 +52,15 @@ Tomoz containers must decode identically everywhere, forever. Therefore:
 - Commits follow [Conventional Commits](https://www.conventionalcommits.org/)
   (`feat(codec): …`, `fix(gateway): …`) and stay small and coherent.
 
+## Releases
+
+`scripts/release.sh X.Y.Z` sets the version in `Cargo.toml` and
+`package.json`, commits, tags `vX.Y.Z` and pushes. The Release workflow then
+checks that the tag matches the versions and publishes everything: the crates
+to crates.io (token in the `crates-io` environment), wheels and sdist to PyPI
+and the package to npm (both by trusted publishing), the container image to
+GitHub Container Registry, and a GitHub release with the CLI binaries.
+
 ## Data
 
 Never commit medical images, even public ones: datasets are downloaded by
