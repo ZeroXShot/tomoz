@@ -1,0 +1,27 @@
+[package]
+name = "tomoz-nn"
+description = "Integer neural network runtime with exact results across scalar, NEON, AVX2 and WebAssembly SIMD kernels"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+authors.workspace = true
+keywords = ["neural-network", "inference", "simd", "quantization", "deterministic"]
+categories = ["science", "mathematics"]
+
+[dependencies]
+thiserror.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+criterion.workspace = true
+
+[[bench]]
+name = "forward"
+harness = false
+
+[lints]
+workspace = true
