@@ -21,10 +21,10 @@ jobs:
         target: [dicom_parse, codec_decode, codec_roundtrip, archive_open, archive_pack, entropy_decode, model_parse, gateway_parsers]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - run: rustup toolchain install nightly --profile minimal
       - run: cargo +nightly install cargo-fuzz --locked
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: fuzz/corpus/${{ matrix.target }}
           key: fuzz-corpus-${{ matrix.target }}-${{ github.run_id }}
@@ -39,7 +39,7 @@ jobs:
           cargo +nightly fuzz run ${{ matrix.target }} --debug-assertions --
           -max_total_time=${{ inputs.seconds || 600 }} -rss_limit_mb=2048 -malloc_limit_mb=2048 -timeout=20
       - if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: crash-${{ matrix.target }}
           path: fuzz/artifacts/${{ matrix.target }}
