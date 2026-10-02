@@ -1,0 +1,25 @@
+# Weekly dependency updates, grouped so that each ecosystem opens one pull
+# request; CI (including cargo-deny) checks every update.
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directories: ["/", "/fuzz"]
+    schedule:
+      interval: weekly
+    groups:
+      cargo:
+        patterns: ["*"]
+  - package-ecosystem: uv
+    directory: /lab
+    schedule:
+      interval: weekly
+    groups:
+      lab:
+        patterns: ["*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
