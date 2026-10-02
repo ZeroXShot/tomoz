@@ -1,0 +1,1922 @@
+{
+ "name": "tz1",
+ "source": "The Cancer Imaging Archive (TCIA), public collections, NBIA API v1",
+ "api": "https://services.cancerimagingarchive.net/nbia-api/services/v1/",
+ "selection": "lab/src/tomoz_lab/datasets/manifest.py (RULES)",
+ "series": [
+  {
+   "id": "ct-pancreas-ct-027bc055",
+   "split": "train",
+   "collection": "Pancreas-CT",
+   "modality": "CT",
+   "series_uid": "1.2.826.0.1.3680043.2.1125.1.60235028047286366571052729575929673",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.tNB1kqBU",
+   "window": 40,
+   "sha256": "a9f103c88dbb9f9d70e57ec12650c2fb6de8d11610ff0d136a33f63c3022f77e",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-pancreas-ct-034395e6",
+   "split": "train",
+   "collection": "Pancreas-CT",
+   "modality": "CT",
+   "series_uid": "1.2.826.0.1.3680043.2.1125.1.50446704163540483207682542927101391",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.tNB1kqBU",
+   "window": 40,
+   "sha256": "72c5eecad65fbbafab6ae6d61ee2c90e3feebeef1d718ca11867b3c2c0bd24e4",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-pancreas-ct-05c70928",
+   "split": "train",
+   "collection": "Pancreas-CT",
+   "modality": "CT",
+   "series_uid": "1.2.826.0.1.3680043.2.1125.1.33327379157477488046582552288217966",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.tNB1kqBU",
+   "window": 40,
+   "sha256": "d53c0fd3c4fa44b77c7454efa33c8f812de3a28ee574eb7c9679644788c5807d",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-pancreas-ct-072bc1a2",
+   "split": "train",
+   "collection": "Pancreas-CT",
+   "modality": "CT",
+   "series_uid": "1.2.826.0.1.3680043.2.1125.1.4516691524934112359097166214332005",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.tNB1kqBU",
+   "window": 40,
+   "sha256": "62741ee81f5d6bf8c8c8ad4ccb5033c904414376f9fa504a8aeb1f35cfcf3447",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-ct-colonography-0018b796",
+   "split": "train",
+   "collection": "CT COLONOGRAPHY",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.9328.50.4.658269",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.NWTESAY1",
+   "window": 40,
+   "sha256": "abdcecb7fbb88d16f0cb517b4d670464d27194269903241efa2a5039b56e421f",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-ct-colonography-001df55a",
+   "split": "train",
+   "collection": "CT COLONOGRAPHY",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.9328.50.4.791914",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.NWTESAY1",
+   "window": 40,
+   "sha256": "0fae9b54f349a8429289d71ee041ac7d7e554eef8d2ad379af19a7ef101f0f61",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-ct-colonography-004f56b4",
+   "split": "train",
+   "collection": "CT COLONOGRAPHY",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.9328.50.4.373382",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.NWTESAY1",
+   "window": 40,
+   "sha256": "567b865affe352c6638570c0d47acb79fe33723f5961d8b2339ad8ef96dcada5",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-ct-colonography-00664efc",
+   "split": "train",
+   "collection": "CT COLONOGRAPHY",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.9328.50.4.500018",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.NWTESAY1",
+   "window": 40,
+   "sha256": "004071d6b94ee2d34042e674e5a1dadcaba67c2e46592fbec14d64f450f67bb0",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lctsc-00e459dd",
+   "split": "train",
+   "collection": "LCTSC",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7014.4598.203884267248904801171397569051",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2017.3r3fvz08",
+   "window": 40,
+   "sha256": "923bc3ffb1faff9387e419b0e51d34b242ae03c291d769dc29d98da19328c455",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lctsc-082ed997",
+   "split": "train",
+   "collection": "LCTSC",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7014.4598.269433294341779474954801314473",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2017.3r3fvz08",
+   "window": 40,
+   "sha256": "0c1227b7f2b2fb9a7d220609435635e4cf68cfc6c29c63735edc2f7c99690f96",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lctsc-0a93e57d",
+   "split": "train",
+   "collection": "LCTSC",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7014.4598.522178945561749099159967411179",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2017.3r3fvz08",
+   "window": 40,
+   "sha256": "f72ee72124e867c069fb2148207cac901a651cb9c45203e100213205d3a41641",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lctsc-0bda1539",
+   "split": "train",
+   "collection": "LCTSC",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7014.4598.238937006009449320383086806161",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2017.3r3fvz08",
+   "window": 40,
+   "sha256": "a2dad108704e681f76fcefd904037e199e8ed7ad91abc8253f3c8720fdbb267c",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-pediatric-ct-seg-00078961",
+   "split": "train",
+   "collection": "Pediatric-CT-SEG",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.16017431868926140919636644871560527743",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.x0h0-1706",
+   "window": 40,
+   "sha256": "2720afcff7f719f39c0076647631670999a8a3eab7d8340b7421241d6a94dbcd",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-pediatric-ct-seg-001323f9",
+   "split": "train",
+   "collection": "Pediatric-CT-SEG",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.262541319512699181086525025385041370641",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.x0h0-1706",
+   "window": 40,
+   "sha256": "ec61997b605452775ea785bb586798a6b1b23221abdf380cc53e0e97d3215686",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-pediatric-ct-seg-007100e9",
+   "split": "train",
+   "collection": "Pediatric-CT-SEG",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.130546111303437770580008120663856225166",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.x0h0-1706",
+   "window": 40,
+   "sha256": "9d5b1199baf86c33f666f96e23416ee8a660b91aae94e8b6f7289481777e7145",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-pediatric-ct-seg-0149efed",
+   "split": "train",
+   "collection": "Pediatric-CT-SEG",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.186590325330649035094026090244184611520",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.x0h0-1706",
+   "window": 40,
+   "sha256": "d8865d1eaa10f163960057cc05cc5bcfb6cf54336cc95c30d8456f893616824e",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-hcc-tace-seg-00d36835",
+   "split": "train",
+   "collection": "HCC-TACE-Seg",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1706.8374.873331091932550080665099835357",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.5FNA-0924",
+   "window": 40,
+   "sha256": "caae4d6d9e7acd14793954a8e6331687833690b3737a8c18024d67ca44c489cf",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-hcc-tace-seg-01790da6",
+   "split": "train",
+   "collection": "HCC-TACE-Seg",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1706.8374.153633940295718241160242077528",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.5FNA-0924",
+   "window": 40,
+   "sha256": "066fef31217a306616ceed406a3e41a8b0ebc1ff123797c0cb991c53c76f3569",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-hcc-tace-seg-020c8769",
+   "split": "train",
+   "collection": "HCC-TACE-Seg",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1706.8374.147566842653218238302949720374",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.5FNA-0924",
+   "window": 40,
+   "sha256": "67cffa1df789a8c522f5102268f948dd3d6bdc71f5eb5c934309edd0eaf7e463",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-hcc-tace-seg-030c0dbe",
+   "split": "train",
+   "collection": "HCC-TACE-Seg",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1706.8374.150171363944819610239287853926",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.5FNA-0924",
+   "window": 40,
+   "sha256": "c8864158a6a528c88d4e6f2ad7aa556c68b98f2b23c31b7ae908479d2cfe74e0",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-c4kc-kits-004b2c51",
+   "split": "train",
+   "collection": "C4KC-KiTS",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6919.4624.260756901194186229386316569559",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2019.IX49E8NX",
+   "window": 40,
+   "sha256": "00e78eaa61e01e2341fcc27fa019059de72bb31869f0164fead7c1c9711e285f",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-c4kc-kits-006367ba",
+   "split": "train",
+   "collection": "C4KC-KiTS",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6919.4624.291072269577553408324648229212",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2019.IX49E8NX",
+   "window": 40,
+   "sha256": "bb3164c82cdf08f045e63a39a48642a86802de73765953c10438686599ebc6ec",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-c4kc-kits-00cbc7f4",
+   "split": "train",
+   "collection": "C4KC-KiTS",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6919.4624.218027349447924601084979726707",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2019.IX49E8NX",
+   "window": 40,
+   "sha256": "c27ccc5b0852b37ebe1f4a35e01556a0be45f580259a145e148fec1d59bf6106",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-c4kc-kits-027755dd",
+   "split": "train",
+   "collection": "C4KC-KiTS",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6919.4624.261735936171531168298414674256",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2019.IX49E8NX",
+   "window": 40,
+   "sha256": "fe3323383ace0c9c5949b308f2e8c1babcc11ef76f3a3912d1c6d8c092dadc6c",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-ct-lymph-nodes-00593ef8",
+   "split": "train",
+   "collection": "CT Lymph Nodes",
+   "modality": "CT",
+   "series_uid": "61.7.84833104620360002906396908252054095948",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.AQIIDCNM",
+   "window": 40,
+   "sha256": "4aa7817fb7da8999f397b3ada855f8ad317c0091b0ef3b978dd09bff181dcd53",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-ct-lymph-nodes-0306389e",
+   "split": "train",
+   "collection": "CT Lymph Nodes",
+   "modality": "CT",
+   "series_uid": "61.7.67677681873327707654342195595111599238",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.AQIIDCNM",
+   "window": 40,
+   "sha256": "a499679362608e4e20d837b905f8c3cec77b1af14d2dc3ce599c253b5c2a200d",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-ct-lymph-nodes-0377ea10",
+   "split": "train",
+   "collection": "CT Lymph Nodes",
+   "modality": "CT",
+   "series_uid": "61.7.145906379107184456902992005646062309709",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.AQIIDCNM",
+   "window": 40,
+   "sha256": "2a6d681a4d7c3fdc738369c4090aa7c7539f15b91eb76d1d2b9c89cd0ed2ecc8",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-ct-lymph-nodes-07068ffb",
+   "split": "train",
+   "collection": "CT Lymph Nodes",
+   "modality": "CT",
+   "series_uid": "61.7.208412509846089543172211418251772065604",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.AQIIDCNM",
+   "window": 40,
+   "sha256": "dbbad012ec8d062c0ef1a7ee93a81155172c505aaeeefca3d1155eeddf486e79",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-fdg-pet-ct-lesions-0005b7ab",
+   "split": "train",
+   "collection": "FDG-PET-CT-Lesions",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.234380689636275217891068120898681846304",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "10.7937/gkr0-xv29 ",
+   "window": 40,
+   "sha256": "8a778631d5dcb2e04e8c0d8259c2becaba3191d037377d63c093452f8c61749a",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-fdg-pet-ct-lesions-00c5a927",
+   "split": "train",
+   "collection": "FDG-PET-CT-Lesions",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.88628843632965829713270052728741418357",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "10.7937/gkr0-xv29 ",
+   "window": 40,
+   "sha256": "f4b9e196f68935408131f79b216cbc12f51e33ff55b043b2f031590d0905b3a3",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-fdg-pet-ct-lesions-00ceebb4",
+   "split": "train",
+   "collection": "FDG-PET-CT-Lesions",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.67208072552589929204082917704866959172",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "10.7937/gkr0-xv29 ",
+   "window": 40,
+   "sha256": "d938c1fae7634f16ea36a64fdc56c2d82b4bb9f957f48d1b40fe90ec61a57cc3",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-fdg-pet-ct-lesions-01ad9b37",
+   "split": "train",
+   "collection": "FDG-PET-CT-Lesions",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.3501966449507730511114926707648657840",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "10.7937/gkr0-xv29 ",
+   "window": 40,
+   "sha256": "f00515fea698ae9a1821dc0f1bb6a6cf04c7044afca610ba8efd78a446a3bc28",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lung-pet-ct-dx-002c2b29",
+   "split": "train",
+   "collection": "Lung-PET-CT-Dx",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.115432191511422823620477914899",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.NNC2-0461",
+   "window": 40,
+   "sha256": "932ba30bc660f8baebd2e67b35b194237ea2cd4eaede1c88a386e1f06c176d0c",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lung-pet-ct-dx-00947c84",
+   "split": "train",
+   "collection": "Lung-PET-CT-Dx",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.205323629845989728283174544918",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.NNC2-0461",
+   "window": 40,
+   "sha256": null,
+   "shape": null,
+   "excluded": "no 8- or 16-bit grayscale image"
+  },
+  {
+   "id": "ct-lung-pet-ct-dx-018bdb5d",
+   "split": "train",
+   "collection": "Lung-PET-CT-Dx",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.890703808762813850294431266483",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.NNC2-0461",
+   "window": 40,
+   "sha256": "457e80b3dfa88d72fada43d49cd2107bfdc3f4d5398e4457bdc397292879fa69",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lung-pet-ct-dx-02815a6d",
+   "split": "train",
+   "collection": "Lung-PET-CT-Dx",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.206033462145849909607777465415",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.NNC2-0461",
+   "window": 40,
+   "sha256": null,
+   "shape": null,
+   "excluded": "no 8- or 16-bit grayscale image"
+  },
+  {
+   "id": "ct-covid-19-ny-sbu-000063c3",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.17102476657639962555428755144437",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": 40,
+   "sha256": "d4808c103164230984605a07548a0304ab7f78203a6419ebf352e2e5e2c8b727",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-covid-19-ny-sbu-000f9167",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.10030528735812263099166885558995",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": 40,
+   "sha256": "1ea590503d368a65807e5bbfdba37183eb66aa5e6dcd171050047eb9f7c601e9",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-covid-19-ny-sbu-0068aaab",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.17565651833543266001782680849702",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": 40,
+   "sha256": "3446c00ee53c614d75951a57367c4748e14a6d837f1a694aa41a0473c896c7ae",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-covid-19-ny-sbu-00927153",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.30060943883891442929461794952826",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": 40,
+   "sha256": "d83f6728428b0d3b19a0993cef4698e700e7c6a4428b39989f60fa3144a63a16",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lidc-idri-008fc5b0",
+   "split": "test",
+   "collection": "LIDC-IDRI",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.280972147860943609388015648430",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.LO9QL9SX",
+   "window": null,
+   "sha256": "6840a0e73dc960b75cc28c1da7ab7406cc05d3047d50a3459d9a4ceb4ff6a006",
+   "shape": [
+    139,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-lidc-idri-00b010b0",
+   "split": "test",
+   "collection": "LIDC-IDRI",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.219349715895470349269596532320",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.LO9QL9SX",
+   "window": null,
+   "sha256": "878c68f53acde7e304d18ead2193f5a7bc167f4ca8712cb950ea8ac4eea2a80d",
+   "shape": [
+    244,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-spine-mets-ct-seg-78432bfe",
+   "split": "test",
+   "collection": "Spine-Mets-CT-SEG",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.227862481115741677811684485953284571738",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/kh36-ds04",
+   "window": null,
+   "sha256": "530f6aa92365ab5cae0085bbd7cd763db98e75be50285e9a6775c7ec8a777170",
+   "shape": [
+    332,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-spine-mets-ct-seg-7e50043c",
+   "split": "test",
+   "collection": "Spine-Mets-CT-SEG",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.73144014036171940906328222458533629808",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/kh36-ds04",
+   "window": null,
+   "sha256": "71324d2a2e48e537a05f4861ccc16a34046e7d7d926f7b06903f8697166de9e0",
+   "shape": [
+    242,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-stageii-colorectal-ct-002f11e7",
+   "split": "test",
+   "collection": "StageII-Colorectal-CT",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.228928587918980840950929708292217380170",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/p5k5-tg43",
+   "window": null,
+   "sha256": "65f3fc5f5a0e2e63fec87d99e2d3d9a6ae94cd3321e88b2b861c41db8b6f656b",
+   "shape": [
+    107,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-stageii-colorectal-ct-0ee4c387",
+   "split": "test",
+   "collection": "StageII-Colorectal-CT",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.4183481352277089475787338722789619867",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/p5k5-tg43",
+   "window": null,
+   "sha256": "6e1b25152ee3a1d7701fa16ab4c25fe2a8f05e9cbb63953ebed7693f7368466e",
+   "shape": [
+    94,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-colorectal-liver-metastases-03ab60e4",
+   "split": "test",
+   "collection": "Colorectal-Liver-Metastases",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.9203.8273.581986813711373802602074144049",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/QXK2-QG03",
+   "window": null,
+   "sha256": "830289588ba5dc868b12062481b1591addecbddc28f68f49307d99aa1aca9f77",
+   "shape": [
+    168,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-colorectal-liver-metastases-0a0378c1",
+   "split": "test",
+   "collection": "Colorectal-Liver-Metastases",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.9203.8273.523944099655144226751369160543",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/QXK2-QG03",
+   "window": null,
+   "sha256": "8bafd504f2cfca22ff3771d8517ce1e0c1cd6f24b0b0b7f066fde41f01e6af00",
+   "shape": [
+    109,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-cptac-pda-003b5b1b",
+   "split": "test",
+   "collection": "CPTAC-PDA",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.4801.5885.156426314323465227809853114199",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2018.SC20FO18",
+   "window": null,
+   "sha256": "38198a88a3937be9b454ba02ce2cf189c0c9f3be93a312e4139f17b139f91d51",
+   "shape": [
+    197,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-cptac-pda-00d2a916",
+   "split": "test",
+   "collection": "CPTAC-PDA",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1078.3707.496778728725139917475077251013",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2018.SC20FO18",
+   "window": null,
+   "sha256": "f98c62c21c82dfbe2f355c80410ba338ca836bb49271f487ebb8c034a5b1c0c2",
+   "shape": [
+    160,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-psma-pet-ct-lesions-0083598b",
+   "split": "test",
+   "collection": "PSMA-PET-CT-Lesions",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.169923146622632185897564017495266011859",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": " https://doi.org/10.7937/r7ep-3x37",
+   "window": null,
+   "sha256": "0a72affd617f723701c8a95589992ff6a864a321e05afee3750b6a865232e44a",
+   "shape": [
+    324,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "ct-psma-pet-ct-lesions-00c3a480",
+   "split": "test",
+   "collection": "PSMA-PET-CT-Lesions",
+   "modality": "CT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.164654919415403893530716193094622971083",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": " https://doi.org/10.7937/r7ep-3x37",
+   "window": null,
+   "sha256": "b3d27788c36e56c0d1e2bd86d7e20ea9a44db6f91c108262e7814c3dbac0cd5e",
+   "shape": [
+    344,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "mr-prostatex-00296d31",
+   "split": "train",
+   "collection": "PROSTATEx",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.646642543020212310821703286289",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9TCIA.2017.MURS5CL",
+   "window": 40,
+   "sha256": "9713df1b0ab9d9dd4d4f50bcd04ae22ea572350b739a453d627bf1d119a7e775",
+   "shape": [
+    40,
+    128,
+    84
+   ]
+  },
+  {
+   "id": "mr-prostatex-0068844b",
+   "split": "train",
+   "collection": "PROSTATEx",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7310.5101.129433544999341027102835634411",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9TCIA.2017.MURS5CL",
+   "window": 40,
+   "sha256": "17e12dfb2d77b970fe2ad1013f2b67b7066610cd228c3cd07443b3951f2008ae",
+   "shape": [
+    40,
+    106,
+    128
+   ]
+  },
+  {
+   "id": "mr-prostatex-00fc79af",
+   "split": "train",
+   "collection": "PROSTATEx",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7310.5101.534593788740385862172330323645",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9TCIA.2017.MURS5CL",
+   "window": 40,
+   "sha256": "e3d507a454c86a239c24792b50f487f83c5f5dd48e954f5ee50255382d28a284",
+   "shape": [
+    40,
+    128,
+    84
+   ]
+  },
+  {
+   "id": "mr-prostatex-0106430a",
+   "split": "train",
+   "collection": "PROSTATEx",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7311.5101.547583627555306481408577368750",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9TCIA.2017.MURS5CL",
+   "window": 40,
+   "sha256": "4276e59ce04f7803805741d777d21b6a2318b6c741e08220005d37aa88ccd7b1",
+   "shape": [
+    40,
+    128,
+    84
+   ]
+  },
+  {
+   "id": "mr-upenn-gbm-00025d33",
+   "split": "train",
+   "collection": "UPENN-GBM",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.328456202935706826090790877384967349136",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.709X-DN49",
+   "window": 40,
+   "sha256": "bd4698bdd930e66ea2ff1001e32abb25f858a9ab91bc3c80294590cfed52e9d6",
+   "shape": [
+    40,
+    256,
+    192
+   ]
+  },
+  {
+   "id": "mr-upenn-gbm-0007355d",
+   "split": "train",
+   "collection": "UPENN-GBM",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.129014867779826165883626173170108214215",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.709X-DN49",
+   "window": 40,
+   "sha256": "46af2f50454375c6d36d55c2d091e02ffdfc8c7aeef4bc27967a6514ce036f5d",
+   "shape": [
+    40,
+    256,
+    192
+   ]
+  },
+  {
+   "id": "mr-upenn-gbm-00109b96",
+   "split": "train",
+   "collection": "UPENN-GBM",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.295152209185659378839395533924006326472",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.709X-DN49",
+   "window": 40,
+   "sha256": "067b01a6d0025137d7fd1bec1d35a16d4f4a96791e3ef8b6a8ac15d267dfe83e",
+   "shape": [
+    40,
+    512,
+    384
+   ]
+  },
+  {
+   "id": "mr-upenn-gbm-0028a9c9",
+   "split": "train",
+   "collection": "UPENN-GBM",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.113561773179667494562985020819435826351",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.709X-DN49",
+   "window": 40,
+   "sha256": "51bb39afec89db47da29276bb07dc7f3422ec4b1f5d8c0ab4a95c2a1d7aace63",
+   "shape": [
+    40,
+    256,
+    208
+   ]
+  },
+  {
+   "id": "mr-acrin-6698-0008aaf8",
+   "split": "train",
+   "collection": "ACRIN-6698",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7695.4164.116448467416224797323185700202",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.kk02-6d95",
+   "window": 40,
+   "sha256": "ba7cce5e2982bd47344c0ace8efc43b7952ee0ab2cb7e79518b98fed9e7dcd8e",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "mr-acrin-6698-0009f142",
+   "split": "train",
+   "collection": "ACRIN-6698",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7695.4164.450319609239996286736949256316",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.kk02-6d95",
+   "window": 40,
+   "sha256": "383c27a1ecf6e8883a9cd45db7a0e46251793296de4af6371c17ef38b44fb809",
+   "shape": [
+    40,
+    256,
+    256
+   ]
+  },
+  {
+   "id": "mr-acrin-6698-000b2afc",
+   "split": "train",
+   "collection": "ACRIN-6698",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7695.4164.163379070196969352277943087700",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.kk02-6d95",
+   "window": 40,
+   "sha256": "edce6def7a7c20661e07c74dd42602848c09f0a368a78897949f3f1b2bfdfe99",
+   "shape": [
+    40,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "mr-acrin-6698-000dab34",
+   "split": "train",
+   "collection": "ACRIN-6698",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7695.4164.183610253921875181595290603604",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.kk02-6d95",
+   "window": 40,
+   "sha256": "7668075d6152ebd69559cb0d9c9a954fdd0e0d46a2a5b5110ef52958aad22916",
+   "shape": [
+    25,
+    256,
+    256
+   ]
+  },
+  {
+   "id": "mr-prostate-3t-0444cf97",
+   "split": "train",
+   "collection": "Prostate-3T",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7308.2101.101688087736317305418918651173",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.QJTV5IL5",
+   "window": 40,
+   "sha256": "f6f5f863024d2840f97ac100c7bbc4168b30e1c5b41d61bbc84047a18f8437d2",
+   "shape": [
+    20,
+    320,
+    320
+   ]
+  },
+  {
+   "id": "mr-prostate-3t-04bf684e",
+   "split": "train",
+   "collection": "Prostate-3T",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7308.2101.565010000407569484812794051333",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.QJTV5IL5",
+   "window": 40,
+   "sha256": "211bfc51dfe8bffd1d11969081b56007ee073404b73c687997fdb6b34502d7dd",
+   "shape": [
+    20,
+    320,
+    320
+   ]
+  },
+  {
+   "id": "mr-prostate-3t-0db24ec2",
+   "split": "train",
+   "collection": "Prostate-3T",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7308.2101.208346667881459830039008050594",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.QJTV5IL5",
+   "window": 40,
+   "sha256": "3308ea87c34e679d8915a009e57ed31f06cfbb779292f7130514a2f224a30776",
+   "shape": [
+    20,
+    320,
+    320
+   ]
+  },
+  {
+   "id": "mr-prostate-3t-0e2f67fa",
+   "split": "train",
+   "collection": "Prostate-3T",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7308.2101.100875285304586647581787393410",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2015.QJTV5IL5",
+   "window": 40,
+   "sha256": "af803f1c260cf37d21bacc8db72372721977ec0ca7843affed2824ce4288facc",
+   "shape": [
+    20,
+    320,
+    320
+   ]
+  },
+  {
+   "id": "mr-mri-dir-1a78783c",
+   "split": "train",
+   "collection": "MRI-DIR",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1706.4996.218662694911234866108788191150",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2018.3f08iejt",
+   "window": 40,
+   "sha256": "83c93b6c087341317b6c940a0164f04dfe6d9ccc1c3c7c263f1b2b0f2937da89",
+   "shape": [
+    40,
+    256,
+    256
+   ]
+  },
+  {
+   "id": "mr-remind-00ea3394",
+   "split": "train",
+   "collection": "ReMIND",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.285477732852748561678514777934103182640",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/3RAG-D070",
+   "window": 40,
+   "sha256": "f74ddd5be8e3a2e9036f1604dd42dea35d0d63564a10f168093be2fcdb17cd84",
+   "shape": [
+    30,
+    320,
+    260
+   ]
+  },
+  {
+   "id": "mr-remind-01782e5b",
+   "split": "train",
+   "collection": "ReMIND",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.310528058593781134316362270547378537836",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/3RAG-D070",
+   "window": 40,
+   "sha256": "0b695dcb708f1cacf188fcb3daf22563a9cffd0a2eaf1af872657c37c6fbbb48",
+   "shape": [
+    40,
+    256,
+    256
+   ]
+  },
+  {
+   "id": "mr-remind-0283f6ee",
+   "split": "train",
+   "collection": "ReMIND",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.41913727503107618932563447181855108057",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/3RAG-D070",
+   "window": 40,
+   "sha256": "df64210ea40b153988ba6ada30becfdf627cbb30b182ce4ea35d28d1e92ca9bf",
+   "shape": [
+    40,
+    256,
+    256
+   ]
+  },
+  {
+   "id": "mr-remind-0332a386",
+   "split": "train",
+   "collection": "ReMIND",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.320476015518816713267780326246278674510",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/3RAG-D070",
+   "window": 40,
+   "sha256": "5aec0c046b614898fe7d8b53017d0a5f9b688b0a747dd6d85966124f405176b3",
+   "shape": [
+    40,
+    256,
+    256
+   ]
+  },
+  {
+   "id": "mr-prostate-mri-us-biopsy-0012f287",
+   "split": "test",
+   "collection": "Prostate-MRI-US-Biopsy",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.249329779979228477845751841075308580054",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.A61IOC1A",
+   "window": null,
+   "sha256": "39e25ec33a793cc7fe41c36a41087aab46cac92e3a49123f0280bd874ebdea75",
+   "shape": [
+    60,
+    256,
+    256
+   ]
+  },
+  {
+   "id": "mr-prostate-mri-us-biopsy-0019eab2",
+   "split": "test",
+   "collection": "Prostate-MRI-US-Biopsy",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.290655673421029900134278532422643259806",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.A61IOC1A",
+   "window": null,
+   "sha256": "5225d1a07f008159aae12597aaf2ee4fba73bc2f4ae629c0a611a7c65709698c",
+   "shape": [
+    20,
+    132,
+    160
+   ]
+  },
+  {
+   "id": "mr-prostate-mri-us-biopsy-00417d22",
+   "split": "test",
+   "collection": "Prostate-MRI-US-Biopsy",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.257707434244886030884059120314921918223",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.A61IOC1A",
+   "window": null,
+   "sha256": "696729267941220663ac1ee6a6c4f1a89242db5decf141c74ab10c5117464145",
+   "shape": [
+    20,
+    132,
+    160
+   ]
+  },
+  {
+   "id": "mr-qin-breast-0084579e",
+   "split": "test",
+   "collection": "QIN-BREAST",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.8162.7003.104149223576793345592195630457",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.21JUEBH0",
+   "window": null,
+   "sha256": "df665ce453330ee8df6c97be341bceaf0cae541ed3650601dc27da32a94ec9bb",
+   "shape": [
+    108,
+    144,
+    144
+   ]
+  },
+  {
+   "id": "mr-qin-breast-0095ddbb",
+   "split": "test",
+   "collection": "QIN-BREAST",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.8162.7003.919884436428079145425649212094",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.21JUEBH0",
+   "window": null,
+   "sha256": "eca13bda0ac147e140bff961b0fee280c1b45cb932dbca78b548f50310afb22d",
+   "shape": [
+    108,
+    144,
+    144
+   ]
+  },
+  {
+   "id": "mr-qin-breast-00c21a2d",
+   "split": "test",
+   "collection": "QIN-BREAST",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.8162.7003.158339300003189734588520386329",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.21JUEBH0",
+   "window": null,
+   "sha256": "4cdb8c1482999be2002e3e86231ef3f9707098843c60f5432db56b74e600b1aa",
+   "shape": [
+    200,
+    192,
+    192
+   ]
+  },
+  {
+   "id": "mr-vestibular-schwannoma-seg-00f2e80d",
+   "split": "test",
+   "collection": "Vestibular-Schwannoma-SEG",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.251606799383580969844189799392861321861",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.9YTJ-5Q73",
+   "window": null,
+   "sha256": "19d25a7b8babaf95cbb854fd930a8cf6a114bdbdd3d14d37aa77adf60eab8c82",
+   "shape": [
+    70,
+    448,
+    448
+   ]
+  },
+  {
+   "id": "mr-vestibular-schwannoma-seg-028f1372",
+   "split": "test",
+   "collection": "Vestibular-Schwannoma-SEG",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.230886891301655509377882715693331507427",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.9YTJ-5Q73",
+   "window": null,
+   "sha256": "9ab9457af404c875387e2b1e31e50fba5f67d51a35156f1b1448b078a180e369",
+   "shape": [
+    160,
+    512,
+    512
+   ]
+  },
+  {
+   "id": "mr-vestibular-schwannoma-seg-02b28773",
+   "split": "test",
+   "collection": "Vestibular-Schwannoma-SEG",
+   "modality": "MR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.137213097494387692044497332427005289056",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.9YTJ-5Q73",
+   "window": null,
+   "sha256": "5851cd6bad02e3eff87a0a6cbb36b568196947143a2786e2f2f859ffced6cf3c",
+   "shape": [
+    40,
+    384,
+    384
+   ]
+  },
+  {
+   "id": "pt-fdg-pet-ct-lesions-00950039",
+   "split": "train",
+   "collection": "FDG-PET-CT-Lesions",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.335129370609790512239781774594987271324",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "10.7937/gkr0-xv29 ",
+   "window": 40,
+   "sha256": "94260f80c6ae56d3ea195e2ad7ff01fb706d9733b59d95ec5a6b6a1865d4e414",
+   "shape": [
+    40,
+    400,
+    400
+   ]
+  },
+  {
+   "id": "pt-fdg-pet-ct-lesions-00b53e7b",
+   "split": "train",
+   "collection": "FDG-PET-CT-Lesions",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.189082793831721842514047368952338317812",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "10.7937/gkr0-xv29 ",
+   "window": 40,
+   "sha256": "024dda3cf814edda153fcd9e0fe75d7bf841459bb58833b47327f8805d089977",
+   "shape": [
+    40,
+    400,
+    400
+   ]
+  },
+  {
+   "id": "pt-fdg-pet-ct-lesions-00b7761b",
+   "split": "train",
+   "collection": "FDG-PET-CT-Lesions",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.121983034838513024732703658647049426303",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "10.7937/gkr0-xv29 ",
+   "window": 40,
+   "sha256": "a577e6e7d10b5cf650209312ff6d3f9657c431e32410d8094e56533bf31a4207",
+   "shape": [
+    40,
+    400,
+    400
+   ]
+  },
+  {
+   "id": "pt-fdg-pet-ct-lesions-0141c84e",
+   "split": "train",
+   "collection": "FDG-PET-CT-Lesions",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.173551380227379383145299846796126579339",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "10.7937/gkr0-xv29 ",
+   "window": 40,
+   "sha256": "5d6e96735a32efe33f98ac18b19d021e960717b0c4c468d503abbec317976625",
+   "shape": [
+    40,
+    400,
+    400
+   ]
+  },
+  {
+   "id": "pt-lung-pet-ct-dx-005f3687",
+   "split": "train",
+   "collection": "Lung-PET-CT-Dx",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.281901822791876893323064854846",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.NNC2-0461",
+   "window": 40,
+   "sha256": "c55cb1bea7605ee8a19be63b6086f302fcee88452f1be9678883721768f77d8d",
+   "shape": [
+    40,
+    200,
+    200
+   ]
+  },
+  {
+   "id": "pt-lung-pet-ct-dx-014361ea",
+   "split": "train",
+   "collection": "Lung-PET-CT-Dx",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.110962344503506730112478489381",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.NNC2-0461",
+   "window": 40,
+   "sha256": "176ef8e7a0edfcf54a77a285a719a3fd94fc3a1a683a2492dd8d3391a100e269",
+   "shape": [
+    40,
+    200,
+    200
+   ]
+  },
+  {
+   "id": "pt-lung-pet-ct-dx-02127f2e",
+   "split": "train",
+   "collection": "Lung-PET-CT-Dx",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.274663222481567189648018140987",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.NNC2-0461",
+   "window": 40,
+   "sha256": "4adec06884178a338beb8b1c4e7ef999c34ff27c5952fad19c6a20aac9f49a76",
+   "shape": [
+    40,
+    200,
+    200
+   ]
+  },
+  {
+   "id": "pt-lung-pet-ct-dx-028a0116",
+   "split": "train",
+   "collection": "Lung-PET-CT-Dx",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.6655.2359.187875534730397649315710251898",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.2020.NNC2-0461",
+   "window": 40,
+   "sha256": "f4ee09b7e36c216f62c5c74fa5b940797105084e9de798ed281e46c00e7dbc6f",
+   "shape": [
+    40,
+    200,
+    200
+   ]
+  },
+  {
+   "id": "pt-acrin-nsclc-fdg-pet-00100754",
+   "split": "test",
+   "collection": "ACRIN-NSCLC-FDG-PET",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7009.2403.141474263386820208597789961358",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2019.30ilqfcl",
+   "window": null,
+   "sha256": "5e358439addfa242a6e1bfe850f8f17d8c43fd4814d8696e5e96f88b256ccad3",
+   "shape": [
+    299,
+    128,
+    128
+   ]
+  },
+  {
+   "id": "pt-acrin-nsclc-fdg-pet-00658c63",
+   "split": "test",
+   "collection": "ACRIN-NSCLC-FDG-PET",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7009.2403.150671960855662480296432265512",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2019.30ilqfcl",
+   "window": null,
+   "sha256": "2f19d1081ee5ee6a5d53436367b03b95caaa3459ad133e2dc877b7930baeba78",
+   "shape": [
+    128,
+    160,
+    128
+   ]
+  },
+  {
+   "id": "pt-acrin-nsclc-fdg-pet-00a033f3",
+   "split": "test",
+   "collection": "ACRIN-NSCLC-FDG-PET",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.7009.2403.247240019779776537776002757944",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2019.30ilqfcl",
+   "window": null,
+   "sha256": "9615a0dcb252aaf28cbbf67901fc74e2d845146e3113c81992637ad49b38e68d",
+   "shape": [
+    267,
+    128,
+    128
+   ]
+  },
+  {
+   "id": "pt-psma-pet-ct-lesions-00036d47",
+   "split": "test",
+   "collection": "PSMA-PET-CT-Lesions",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.309122135748112712370280917741505213905",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": " https://doi.org/10.7937/r7ep-3x37",
+   "window": null,
+   "sha256": "b55c7a011ae7a3528a2281028f6d7be2eb3ed96c96b8200585e21bc888370774",
+   "shape": [
+    452,
+    200,
+    200
+   ]
+  },
+  {
+   "id": "pt-psma-pet-ct-lesions-00660566",
+   "split": "test",
+   "collection": "PSMA-PET-CT-Lesions",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.317713418111531943658933507281666286143",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": " https://doi.org/10.7937/r7ep-3x37",
+   "window": null,
+   "sha256": "87b20d35ee03239df3d08c0f17a2061ad89f8e9765c72dcae2ec3d94714fd64a",
+   "shape": [
+    263,
+    256,
+    256
+   ]
+  },
+  {
+   "id": "pt-psma-pet-ct-lesions-00dbf2c2",
+   "split": "test",
+   "collection": "PSMA-PET-CT-Lesions",
+   "modality": "PT",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.339674733587010410957543941152214838444",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": " https://doi.org/10.7937/r7ep-3x37",
+   "window": null,
+   "sha256": "495f23e0a8bb9a94071f33e7cb4eae51829d0d944f2961e50efba1032374ee7d",
+   "shape": [
+    195,
+    168,
+    168
+   ]
+  },
+  {
+   "id": "cr-covid-19-ny-sbu-000038b6",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "CR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.21197892544588096927568040698996",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": null,
+   "sha256": "f555362eadab9c953a6566e859770c62f910eb3c82b804e09b14b7b084bf77f1",
+   "shape": [
+    1,
+    2517,
+    3007
+   ]
+  },
+  {
+   "id": "cr-covid-19-ny-sbu-0004ff53",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "CR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.11466373565474797692306403998228",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": null,
+   "sha256": "f24b9cfdcd053fd6664b83f2e3054483ec3a125a558dcae39733487fec123785",
+   "shape": [
+    1,
+    2520,
+    3032
+   ]
+  },
+  {
+   "id": "cr-covid-19-ny-sbu-00051f1a",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "CR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.25171267822080155601899890617653",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": null,
+   "sha256": "a712c15a272d1283c3b23ea5c860e414b9fbf94e13067e0414e64a1814500fa1",
+   "shape": [
+    1,
+    2482,
+    2381
+   ]
+  },
+  {
+   "id": "cr-covid-19-ny-sbu-000946b5",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "CR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.31245017817812744693503547907187",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": null,
+   "sha256": "5bbe4c71b59aa15b845222d915157e0c7d04c8a8ed792ea44592dec75fc27269",
+   "shape": [
+    1,
+    2544,
+    3056
+   ]
+  },
+  {
+   "id": "dx-covid-19-ny-sbu-0034da80",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "DX",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.17088161236405512545739282523144",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": null,
+   "sha256": "93e4c5ddc24aa33dd0059d9f3d684c40df14c1a50cb81bae1e2260c57f6e29ba",
+   "shape": [
+    1,
+    2520,
+    3032
+   ]
+  },
+  {
+   "id": "dx-covid-19-ny-sbu-008cb27c",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "DX",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.21623688880290687520902589960658",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": null,
+   "sha256": "f75236994381168a1b7acf65b49c69b242bde1a2ae12daba015f0885082234b6",
+   "shape": [
+    1,
+    3032,
+    2520
+   ]
+  },
+  {
+   "id": "dx-covid-19-ny-sbu-00ee6477",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "DX",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.32795313094743747727537115077355",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": null,
+   "sha256": "7ebcdc79efccd4f56ce2ca0a9033b687c7bba8f3802782a5609b791322aca001",
+   "shape": [
+    1,
+    2520,
+    3032
+   ]
+  },
+  {
+   "id": "dx-covid-19-ny-sbu-00ff75a2",
+   "split": "train",
+   "collection": "COVID-19-NY-SBU",
+   "modality": "DX",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.99.1071.24815645158169254535650822569910",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/TCIA.BBAG-2923",
+   "window": null,
+   "sha256": "6525774c5bf2efbafe8a2f573f28f4eef0169a509f7d1e9360be51d69653af00",
+   "shape": [
+    1,
+    2520,
+    3032
+   ]
+  },
+  {
+   "id": "mg-cbis-ddsm-00093088",
+   "split": "train",
+   "collection": "CBIS-DDSM",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.9590.100.1.2.175142292611787475923337972632862722523",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY",
+   "window": null,
+   "sha256": "8c9670e7e1bbc11d5f769f76d4c2694206f642290a3caefba3830caf4a35da84",
+   "shape": [
+    1,
+    218,
+    303
+   ]
+  },
+  {
+   "id": "mg-cbis-ddsm-000b4a1f",
+   "split": "train",
+   "collection": "CBIS-DDSM",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.9590.100.1.2.170022644313842853930156192254012574339",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY",
+   "window": null,
+   "sha256": "362566ad504bf380750e64820ebada3f2ac26892d4bdddc4f69a08acb2ec87fd",
+   "shape": [
+    1,
+    629,
+    633
+   ]
+  },
+  {
+   "id": "mg-cbis-ddsm-001dc313",
+   "split": "train",
+   "collection": "CBIS-DDSM",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.9590.100.1.2.291708845612396087500547083711670299943",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY",
+   "window": null,
+   "sha256": "76c1890c995769ec3174de70c6836ea408b048024652283444bdb79f2cf7cd1c",
+   "shape": [
+    1,
+    244,
+    264
+   ]
+  },
+  {
+   "id": "mg-cbis-ddsm-00257d6b",
+   "split": "train",
+   "collection": "CBIS-DDSM",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.9590.100.1.2.334633084112387052223550821642297592918",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY",
+   "window": null,
+   "sha256": "1272ab7b410ec97a07bdfca13524687ee1df655d2ff30ffbd2ec19f69be72922",
+   "shape": [
+    1,
+    166,
+    186
+   ]
+  },
+  {
+   "id": "mg-cbis-ddsm-002912c9",
+   "split": "train",
+   "collection": "CBIS-DDSM",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.9590.100.1.2.412506143710534742332469380103145820254",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY",
+   "window": null,
+   "sha256": "8581a3468a3c9e129056f2dd4db867c4922d85d7b37025ed6f970c9c5f9a4844",
+   "shape": [
+    1,
+    5551,
+    3241
+   ]
+  },
+  {
+   "id": "mg-cbis-ddsm-002bbc9d",
+   "split": "train",
+   "collection": "CBIS-DDSM",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.9590.100.1.2.6180919612900839906134017803266829086",
+   "license": "Creative Commons Attribution 3.0 Unported License",
+   "collection_doi": "https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY",
+   "window": null,
+   "sha256": "445ca6fcb639f5b6d009da4adc37d7434df07caf716543aa1e9874fb4d7370f1",
+   "shape": [
+    1,
+    4592,
+    3128
+   ]
+  },
+  {
+   "id": "dx-covid-19-ar-00544d3d",
+   "split": "test",
+   "collection": "COVID-19-AR",
+   "modality": "DX",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.9999.103.2517547453280540926320147321302",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2020.py71-5978",
+   "window": null,
+   "sha256": "6e13fc27aa6a82c2fa941466cf6a32113fdab8c004305184e61fe2c985616a17",
+   "shape": [
+    1,
+    2330,
+    2846
+   ]
+  },
+  {
+   "id": "dx-covid-19-ar-006c3f05",
+   "split": "test",
+   "collection": "COVID-19-AR",
+   "modality": "DX",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.9999.103.1982372312235216341124484194285",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2020.py71-5978",
+   "window": null,
+   "sha256": "7c6816792ae28a6c6b03c8b74f244ed5d3581760e943d6172e96b41f8de1c916",
+   "shape": [
+    1,
+    2330,
+    2846
+   ]
+  },
+  {
+   "id": "dx-covid-19-ar-007ee796",
+   "split": "test",
+   "collection": "COVID-19-AR",
+   "modality": "DX",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.9999.103.2438834696855944680907791873151",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2020.py71-5978",
+   "window": null,
+   "sha256": "e4da476ecaec2a8043f858a84bf448ec9a859332695bbb94918fb6a271c88b0a",
+   "shape": [
+    1,
+    2330,
+    2846
+   ]
+  },
+  {
+   "id": "cr-covid-19-ar-05264c87",
+   "split": "test",
+   "collection": "COVID-19-AR",
+   "modality": "CR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.9999.103.8502906371240544738515464165364",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2020.py71-5978",
+   "window": null,
+   "sha256": "4239f794c4cc9ba5b6546a7b34f9570bcb95c021a6afe7cca4d8f32c1399b178",
+   "shape": [
+    1,
+    1760,
+    2140
+   ]
+  },
+  {
+   "id": "cr-covid-19-ar-0753b5c4",
+   "split": "test",
+   "collection": "COVID-19-AR",
+   "modality": "CR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.9999.103.2823563892407131020342134367358",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2020.py71-5978",
+   "window": null,
+   "sha256": "73995f88ead7d199c41289f96410b1eb95183b647b6fc99598a5217622c0a61f",
+   "shape": [
+    1,
+    1760,
+    1760
+   ]
+  },
+  {
+   "id": "cr-covid-19-ar-16dc1bb0",
+   "split": "test",
+   "collection": "COVID-19-AR",
+   "modality": "CR",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.9999.103.2938641785673968459320666638388",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.2020.py71-5978",
+   "window": null,
+   "sha256": "ea9dc050d8c5627f0d7c7cb49f6ee9aa2e1406fe02b3f13ecf4c09c44734993b",
+   "shape": [
+    1,
+    1760,
+    1760
+   ]
+  },
+  {
+   "id": "mg-cmmd-002931ef",
+   "split": "test",
+   "collection": "CMMD",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1239.1759.215880622311466023435507032501",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.eqde-4b16",
+   "window": null,
+   "sha256": "d8387e698e346c6a3c1b18998120ac551cbb243d6501d046e9d37c617921f8dd",
+   "shape": [
+    4,
+    2294,
+    1914
+   ]
+  },
+  {
+   "id": "mg-cmmd-00548254",
+   "split": "test",
+   "collection": "CMMD",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1239.1759.169804119243458781118053291562",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.eqde-4b16",
+   "window": null,
+   "sha256": "a1d9856f6adba47bc61346acec2042c6683237dbc5bc2e063b34abc5513d3b09",
+   "shape": [
+    2,
+    2294,
+    1914
+   ]
+  },
+  {
+   "id": "mg-cmmd-005ef8a4",
+   "split": "test",
+   "collection": "CMMD",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1239.1759.247927360124066564980511729149",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.eqde-4b16",
+   "window": null,
+   "sha256": "9ea14ce676b90cdd3238acedc17667a8be82cbd54a5f1c892cbd67cce41c9737",
+   "shape": [
+    2,
+    2294,
+    1914
+   ]
+  },
+  {
+   "id": "mg-cmmd-007e3c37",
+   "split": "test",
+   "collection": "CMMD",
+   "modality": "MG",
+   "series_uid": "1.3.6.1.4.1.14519.5.2.1.1239.1759.166173824857655132104902534887",
+   "license": "Creative Commons Attribution 4.0 International License",
+   "collection_doi": "https://doi.org/10.7937/tcia.eqde-4b16",
+   "window": null,
+   "sha256": "32565680e3cde5a26f5d103963312b9dadad7f3e629a6839f0b845a246268c24",
+   "shape": [
+    2,
+    2294,
+    1914
+   ]
+  }
+ ]
+}
