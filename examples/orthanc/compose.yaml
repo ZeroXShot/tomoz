@@ -1,0 +1,60 @@
+# Orthanc storing its DICOM files in the Tomoz S3 gateway.
+#
+#   ./init.sh                 # random credentials in .env and ./credentials
+#   docker compose up -d --build
+#
+# Orthanc: http://127.0.0.1:8042 (user "admin", password in .env)
+# Tomoz:   http://127.0.0.1:9100/_tomoz/metrics
+# Ports are bound to the loopback interface; change the *_PORT variables in
+# .env to move them.
+
+services:
+  tomoz:
+    build: ../..
+    image: tomoz:local
+    environment:
+      TOMOZ__AUTH__CREDENTIALS_FILE: /run/secrets/tomoz-credentials
+      TOMOZ__BUCKETS: '["orthanc"]'
+      # Compact a study 30 s after its last instance arrives (default 120 s).
+      TOMOZ__COMPACTION__QUIET_SECONDS: "30"
+    secrets:
+      - tomoz-credentials
+    volumes:
+      - tomoz-data:/var/lib/tomoz
+    ports:
+      - "127.0.0.1:${TOMOZ_PORT:-9100}:9100"
+    restart: unless-stopped
+
+  orthanc:
+    image: orthancteam/orthanc:26.9.1
+    depends_on:
+      - tomoz
+    environment:
+      ORTHANC__NAME: tomoz-example
+      ORTHANC__AUTHENTICATION_ENABLED: "true"
+      ORTHANC__REGISTERED_USERS: '{"admin": "${ORTHANC_PASSWORD:?run ./init.sh first}"}'
+      # The S3 storage plugin, pointed at the gateway (path-style addressing).
+      ORTHANC__AWS_S3_STORAGE__BUCKET_NAME: orthanc
+      ORTHANC__AWS_S3_STORAGE__REGION: us-east-1
+      ORTHANC__AWS_S3_STORAGE__ENDPOINT: http://tomoz:9100
+      ORTHANC__AWS_S3_STORAGE__VIRTUAL_ADDRESSING: "false"
+      ORTHANC__AWS_S3_STORAGE__ACCESS_KEY: ${TOMOZ_ACCESS_KEY:?run ./init.sh first}
+      ORTHANC__AWS_S3_STORAGE__SECRET_KEY: ${TOMOZ_SECRET_KEY:?run ./init.sh first}
+      ORTHANC__AWS_S3_STORAGE__STORAGE_STRUCTURE: flat
+      # Orthanc must store the files as received (no zlib compression, and no
+      # IngestTranscoding, which is off by default) for Tomoz to see the pixels.
+      ORTHANC__STORAGE_COMPRESSION: "false"
+    volumes:
+      - orthanc-db:/var/lib/orthanc/db
+    ports:
+      - "127.0.0.1:${ORTHANC_HTTP_PORT:-8042}:8042"
+      - "127.0.0.1:${ORTHANC_DICOM_PORT:-4242}:4242"
+    restart: unless-stopped
+
+secrets:
+  tomoz-credentials:
+    file: ./credentials
+
+volumes:
+  tomoz-data:
+  orthanc-db:
