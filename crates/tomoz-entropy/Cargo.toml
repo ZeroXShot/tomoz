@@ -1,0 +1,26 @@
+[package]
+name = "tomoz-entropy"
+description = "Range coder with adaptive multi-symbol and binary models, bit-exact on every platform"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+authors.workspace = true
+keywords = ["compression", "range-coder", "arithmetic-coding", "entropy-coding"]
+categories = ["compression", "no-std"]
+
+[dependencies]
+
+[dev-dependencies]
+proptest.workspace = true
+criterion.workspace = true
+
+[[bench]]
+name = "coder"
+harness = false
+
+[lints]
+workspace = true
