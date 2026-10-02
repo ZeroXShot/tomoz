@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><body style="background:#0d1017"><textarea id="out">loading</textarea>
+<script src="skeleton.js"></script>
+<script type="module">
+const { convertToExcalidrawElements, exportToSvg } = await import("https://esm.sh/@excalidraw/excalidraw@0.18.0?bundle&deps=react@18.3.1,react-dom@18.3.1");
+const skeleton = window.SKELETON;
+try {
+  const elements = convertToExcalidrawElements(skeleton.elements, { regenerateIds: false });
+  const svg = await exportToSvg({
+    elements,
+    appState: { exportBackground: true, viewBackgroundColor: skeleton.background, exportPadding: 32, exportWithDarkMode: false },
+    files: null,
+  });
+  document.getElementById("out").value = svg.outerHTML;
+  document.body.appendChild(svg);
+} catch (e) { document.getElementById("out").value = "error " + e.stack; }
+</script>
