@@ -142,7 +142,12 @@ jobs:
             echo "::error::Add the CARGO_REGISTRY_TOKEN secret to the crates-io environment"
             exit 1
           fi
-          cargo publish --workspace --locked
+          version="${GITHUB_REF_NAME#v}"
+          if curl -fsS -A "tomoz-release" "https://crates.io/api/v1/crates/tomoz-cli/$version" > /dev/null 2>&1; then
+            echo "tomoz $version is already on crates.io"
+          else
+            cargo publish --workspace --locked
+          fi
 
   npm-publish:
     name: Publish to npm
@@ -166,7 +171,15 @@ jobs:
       - run: npm install -g npm@latest
       # Trusted publishing when configured on npmjs.com; otherwise the
       # NPM_TOKEN secret of the npm environment (a granular token).
-      - run: npm publish dist/*.tgz --access public --provenance
+      - name: Publish unless this version is already on npm
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          if npm view "@zeroxshot/tomoz@$version" version > /dev/null 2>&1; then
+            echo "@zeroxshot/tomoz $version is already on npm"
+          else
+            # "./" keeps npm from reading "dist/x.tgz" as a GitHub repository.
+            npm publish ./dist/*.tgz --access public --provenance
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
