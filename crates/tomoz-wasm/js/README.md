@@ -1,4 +1,4 @@
-# tomoz (JavaScript / WebAssembly)
+# @zeroxshot/tomoz (JavaScript / WebAssembly)
 
 Decode and encode [Tomoz](https://github.com/ZeroXShot/tomoz) containers in
 browsers and Node.js. The codec is the Rust implementation compiled to
@@ -6,8 +6,12 @@ WebAssembly (with 128-bit SIMD); it computes exactly the same integers as the
 native library, so a container decodes to the same samples — and a volume
 encodes to the same bytes — everywhere. No dependencies, no network access.
 
+```sh
+npm install @zeroxshot/tomoz
+```
+
 ```js
-import { load } from "tomoz";
+import { load } from "@zeroxshot/tomoz";
 
 const tomoz = await load(); // fetches tomoz_wasm.wasm next to the module
 
