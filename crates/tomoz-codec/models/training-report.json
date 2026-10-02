@@ -1,0 +1,453 @@
+{
+  "hidden": [
+    48,
+    48
+  ],
+  "excluded_collections": [],
+  "per_slice": 3000,
+  "slices_2d": 4,
+  "steps": 20000,
+  "quant_steps": 6000,
+  "seed": 0,
+  "models": {
+    "3d": {
+      "file": "tz1-3d.tzm",
+      "name": "tz1-3d-h48x48",
+      "id": "fe411d9822c41fac88240c959e0e48ea",
+      "bytes": 5265,
+      "validation_bits_per_sample": 5.2072,
+      "training_samples": 6826483,
+      "history": [
+        {
+          "phase": "float",
+          "step": 0,
+          "bits": 6.237567901611328,
+          "seconds": 0.2
+        },
+        {
+          "phase": "float",
+          "step": 1000,
+          "bits": 5.286667823791504,
+          "seconds": 15.9
+        },
+        {
+          "phase": "float",
+          "step": 2000,
+          "bits": 5.237085819244385,
+          "seconds": 30.3
+        },
+        {
+          "phase": "float",
+          "step": 3000,
+          "bits": 5.206663131713867,
+          "seconds": 44.9
+        },
+        {
+          "phase": "float",
+          "step": 4000,
+          "bits": 5.214357376098633,
+          "seconds": 59.9
+        },
+        {
+          "phase": "float",
+          "step": 5000,
+          "bits": 5.1653008460998535,
+          "seconds": 74.7
+        },
+        {
+          "phase": "float",
+          "step": 6000,
+          "bits": 5.226118564605713,
+          "seconds": 89.4
+        },
+        {
+          "phase": "float",
+          "step": 7000,
+          "bits": 5.162088394165039,
+          "seconds": 103.5
+        },
+        {
+          "phase": "float",
+          "step": 8000,
+          "bits": 5.208484649658203,
+          "seconds": 117.5
+        },
+        {
+          "phase": "float",
+          "step": 9000,
+          "bits": 5.168121814727783,
+          "seconds": 134.7
+        },
+        {
+          "phase": "float",
+          "step": 10000,
+          "bits": 5.165741920471191,
+          "seconds": 182.4
+        },
+        {
+          "phase": "float",
+          "step": 11000,
+          "bits": 5.216318130493164,
+          "seconds": 201.2
+        },
+        {
+          "phase": "float",
+          "step": 12000,
+          "bits": 5.1791911125183105,
+          "seconds": 221.7
+        },
+        {
+          "phase": "float",
+          "step": 13000,
+          "bits": 5.190142631530762,
+          "seconds": 236.2
+        },
+        {
+          "phase": "float",
+          "step": 14000,
+          "bits": 5.134729385375977,
+          "seconds": 251.0
+        },
+        {
+          "phase": "float",
+          "step": 15000,
+          "bits": 5.14687967300415,
+          "seconds": 272.2
+        },
+        {
+          "phase": "float",
+          "step": 16000,
+          "bits": 5.185317039489746,
+          "seconds": 286.2
+        },
+        {
+          "phase": "float",
+          "step": 17000,
+          "bits": 5.147132396697998,
+          "seconds": 300.0
+        },
+        {
+          "phase": "float",
+          "step": 18000,
+          "bits": 5.1375579833984375,
+          "seconds": 338.4
+        },
+        {
+          "phase": "float",
+          "step": 19000,
+          "bits": 5.187309265136719,
+          "seconds": 365.7
+        },
+        {
+          "phase": "float",
+          "step": 19999,
+          "bits": 5.180816650390625,
+          "seconds": 427.0
+        },
+        {
+          "phase": "quant",
+          "step": 0,
+          "bits": 5.261902809143066,
+          "seconds": 0.2
+        },
+        {
+          "phase": "quant",
+          "step": 1000,
+          "bits": 5.199666976928711,
+          "seconds": 80.0
+        },
+        {
+          "phase": "quant",
+          "step": 2000,
+          "bits": 5.252838611602783,
+          "seconds": 97.3
+        },
+        {
+          "phase": "quant",
+          "step": 3000,
+          "bits": 5.247256755828857,
+          "seconds": 114.2
+        },
+        {
+          "phase": "quant",
+          "step": 4000,
+          "bits": 5.2733588218688965,
+          "seconds": 135.4
+        },
+        {
+          "phase": "quant",
+          "step": 5000,
+          "bits": 5.336428642272949,
+          "seconds": 159.6
+        },
+        {
+          "phase": "quant",
+          "step": 5999,
+          "bits": 5.1810455322265625,
+          "seconds": 183.6
+        }
+      ]
+    },
+    "2d": {
+      "file": "tz1-2d.tzm",
+      "name": "tz1-2d-h48x48",
+      "id": "78f954e342dbbd3eef09fc52ab780e42",
+      "bytes": 4401,
+      "validation_bits_per_sample": 7.0302,
+      "training_samples": 1479059,
+      "history": [
+        {
+          "phase": "float",
+          "step": 0,
+          "bits": 7.794736385345459,
+          "seconds": 0.1
+        },
+        {
+          "phase": "float",
+          "step": 1000,
+          "bits": 7.097420692443848,
+          "seconds": 31.2
+        },
+        {
+          "phase": "float",
+          "step": 2000,
+          "bits": 6.97814416885376,
+          "seconds": 66.8
+        },
+        {
+          "phase": "float",
+          "step": 3000,
+          "bits": 7.05208683013916,
+          "seconds": 98.5
+        },
+        {
+          "phase": "float",
+          "step": 4000,
+          "bits": 6.982852935791016,
+          "seconds": 139.3
+        },
+        {
+          "phase": "float",
+          "step": 5000,
+          "bits": 7.033163070678711,
+          "seconds": 154.9
+        },
+        {
+          "phase": "float",
+          "step": 6000,
+          "bits": 6.999304294586182,
+          "seconds": 182.8
+        },
+        {
+          "phase": "float",
+          "step": 7000,
+          "bits": 6.9973907470703125,
+          "seconds": 203.2
+        },
+        {
+          "phase": "float",
+          "step": 8000,
+          "bits": 7.011969566345215,
+          "seconds": 223.0
+        },
+        {
+          "phase": "float",
+          "step": 9000,
+          "bits": 6.999087333679199,
+          "seconds": 242.9
+        },
+        {
+          "phase": "float",
+          "step": 10000,
+          "bits": 7.017457962036133,
+          "seconds": 262.5
+        },
+        {
+          "phase": "float",
+          "step": 11000,
+          "bits": 7.036673069000244,
+          "seconds": 282.1
+        },
+        {
+          "phase": "float",
+          "step": 12000,
+          "bits": 6.97582483291626,
+          "seconds": 301.3
+        },
+        {
+          "phase": "float",
+          "step": 13000,
+          "bits": 6.9753031730651855,
+          "seconds": 320.2
+        },
+        {
+          "phase": "float",
+          "step": 14000,
+          "bits": 6.95863151550293,
+          "seconds": 339.7
+        },
+        {
+          "phase": "float",
+          "step": 15000,
+          "bits": 6.918999671936035,
+          "seconds": 358.0
+        },
+        {
+          "phase": "float",
+          "step": 16000,
+          "bits": 7.056356906890869,
+          "seconds": 377.8
+        },
+        {
+          "phase": "float",
+          "step": 17000,
+          "bits": 6.981637477874756,
+          "seconds": 401.7
+        },
+        {
+          "phase": "float",
+          "step": 18000,
+          "bits": 6.973933219909668,
+          "seconds": 419.8
+        },
+        {
+          "phase": "float",
+          "step": 19000,
+          "bits": 6.977055072784424,
+          "seconds": 439.4
+        },
+        {
+          "phase": "float",
+          "step": 19999,
+          "bits": 6.96712589263916,
+          "seconds": 459.8
+        },
+        {
+          "phase": "quant",
+          "step": 0,
+          "bits": 7.036861419677734,
+          "seconds": 0.0
+        },
+        {
+          "phase": "quant",
+          "step": 1000,
+          "bits": 6.993246555328369,
+          "seconds": 31.5
+        },
+        {
+          "phase": "quant",
+          "step": 2000,
+          "bits": 7.164685249328613,
+          "seconds": 62.0
+        },
+        {
+          "phase": "quant",
+          "step": 3000,
+          "bits": 7.03650426864624,
+          "seconds": 127.6
+        },
+        {
+          "phase": "quant",
+          "step": 4000,
+          "bits": 7.0381999015808105,
+          "seconds": 176.9
+        },
+        {
+          "phase": "quant",
+          "step": 5000,
+          "bits": 7.026968955993652,
+          "seconds": 210.2
+        },
+        {
+          "phase": "quant",
+          "step": 5999,
+          "bits": 6.96293830871582,
+          "seconds": 234.4
+        }
+      ]
+    }
+  },
+  "volumes": [
+    "cr-covid-19-ny-sbu-000038b6",
+    "cr-covid-19-ny-sbu-0004ff53",
+    "cr-covid-19-ny-sbu-00051f1a",
+    "cr-covid-19-ny-sbu-000946b5",
+    "ct-c4kc-kits-004b2c51",
+    "ct-c4kc-kits-006367ba",
+    "ct-c4kc-kits-00cbc7f4",
+    "ct-c4kc-kits-027755dd",
+    "ct-covid-19-ny-sbu-000063c3",
+    "ct-covid-19-ny-sbu-000f9167",
+    "ct-covid-19-ny-sbu-0068aaab",
+    "ct-covid-19-ny-sbu-00927153",
+    "ct-ct-colonography-0018b796",
+    "ct-ct-colonography-001df55a",
+    "ct-ct-colonography-004f56b4",
+    "ct-ct-colonography-00664efc",
+    "ct-ct-lymph-nodes-00593ef8",
+    "ct-ct-lymph-nodes-0306389e",
+    "ct-ct-lymph-nodes-0377ea10",
+    "ct-ct-lymph-nodes-07068ffb",
+    "ct-fdg-pet-ct-lesions-0005b7ab",
+    "ct-fdg-pet-ct-lesions-00c5a927",
+    "ct-fdg-pet-ct-lesions-00ceebb4",
+    "ct-fdg-pet-ct-lesions-01ad9b37",
+    "ct-hcc-tace-seg-00d36835",
+    "ct-hcc-tace-seg-01790da6",
+    "ct-hcc-tace-seg-020c8769",
+    "ct-hcc-tace-seg-030c0dbe",
+    "ct-lctsc-00e459dd",
+    "ct-lctsc-082ed997",
+    "ct-lctsc-0a93e57d",
+    "ct-lctsc-0bda1539",
+    "ct-lung-pet-ct-dx-002c2b29",
+    "ct-lung-pet-ct-dx-018bdb5d",
+    "ct-pancreas-ct-027bc055",
+    "ct-pancreas-ct-034395e6",
+    "ct-pancreas-ct-05c70928",
+    "ct-pancreas-ct-072bc1a2",
+    "ct-pediatric-ct-seg-00078961",
+    "ct-pediatric-ct-seg-001323f9",
+    "ct-pediatric-ct-seg-007100e9",
+    "ct-pediatric-ct-seg-0149efed",
+    "dx-covid-19-ny-sbu-0034da80",
+    "dx-covid-19-ny-sbu-008cb27c",
+    "dx-covid-19-ny-sbu-00ee6477",
+    "dx-covid-19-ny-sbu-00ff75a2",
+    "mg-cbis-ddsm-00093088",
+    "mg-cbis-ddsm-000b4a1f",
+    "mg-cbis-ddsm-001dc313",
+    "mg-cbis-ddsm-00257d6b",
+    "mg-cbis-ddsm-002912c9",
+    "mg-cbis-ddsm-002bbc9d",
+    "mr-acrin-6698-0008aaf8",
+    "mr-acrin-6698-0009f142",
+    "mr-acrin-6698-000b2afc",
+    "mr-acrin-6698-000dab34",
+    "mr-mri-dir-1a78783c",
+    "mr-prostate-3t-0444cf97",
+    "mr-prostate-3t-04bf684e",
+    "mr-prostate-3t-0db24ec2",
+    "mr-prostate-3t-0e2f67fa",
+    "mr-prostatex-00296d31",
+    "mr-prostatex-0068844b",
+    "mr-prostatex-00fc79af",
+    "mr-prostatex-0106430a",
+    "mr-remind-00ea3394",
+    "mr-remind-01782e5b",
+    "mr-remind-0283f6ee",
+    "mr-remind-0332a386",
+    "mr-upenn-gbm-00025d33",
+    "mr-upenn-gbm-0007355d",
+    "mr-upenn-gbm-00109b96",
+    "mr-upenn-gbm-0028a9c9",
+    "pt-fdg-pet-ct-lesions-00950039",
+    "pt-fdg-pet-ct-lesions-00b53e7b",
+    "pt-fdg-pet-ct-lesions-00b7761b",
+    "pt-fdg-pet-ct-lesions-0141c84e",
+    "pt-lung-pet-ct-dx-005f3687",
+    "pt-lung-pet-ct-dx-014361ea",
+    "pt-lung-pet-ct-dx-02127f2e",
+    "pt-lung-pet-ct-dx-028a0116"
+  ]
+}
