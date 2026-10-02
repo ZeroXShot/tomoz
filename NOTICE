@@ -1,0 +1,38 @@
+Tomoz
+Copyright 2026 ZeroXShot
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Built-in models
+---------------
+
+The models embedded in Tomoz (crates/tomoz-codec/models/tz1-2d.tzm and
+tz1-3d.tzm) were trained on images from The Cancer Imaging Archive (TCIA),
+using only collections published under Creative Commons Attribution licences.
+The series used are pinned in lab/manifests/tz1.json. Training collections:
+
+  ACRIN-6698                 CC BY 4.0  https://doi.org/10.7937/tcia.kk02-6d95
+  C4KC-KiTS                  CC BY 3.0  https://doi.org/10.7937/TCIA.2019.IX49E8NX
+  CBIS-DDSM                  CC BY 3.0  https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY
+  COVID-19-NY-SBU            CC BY 4.0  https://doi.org/10.7937/TCIA.BBAG-2923
+  CT COLONOGRAPHY            CC BY 3.0  https://doi.org/10.7937/K9/TCIA.2015.NWTESAY1
+  CT Lymph Nodes             CC BY 3.0  https://doi.org/10.7937/K9/TCIA.2015.AQIIDCNM
+  FDG-PET-CT-Lesions         CC BY 4.0  https://doi.org/10.7937/gkr0-xv29
+  HCC-TACE-Seg               CC BY 4.0  https://doi.org/10.7937/TCIA.5FNA-0924
+  LCTSC                      CC BY 3.0  https://doi.org/10.7937/K9/TCIA.2017.3r3fvz08
+  Lung-PET-CT-Dx             CC BY 4.0  https://doi.org/10.7937/TCIA.2020.NNC2-0461
+  MRI-DIR                    CC BY 4.0  https://doi.org/10.7937/K9/TCIA.2018.3f08iejt
+  Pancreas-CT                CC BY 3.0  https://doi.org/10.7937/K9/TCIA.2016.tNB1kqBU
+  Pediatric-CT-SEG           CC BY 4.0  https://doi.org/10.7937/tcia.x0h0-1706
+  PROSTATEx                  CC BY 3.0  https://doi.org/10.7937/K9TCIA.2017.MURS5CL
+  Prostate-3T                CC BY 3.0  https://doi.org/10.7937/K9/TCIA.2015.QJTV5IL5
+  ReMIND                     CC BY 4.0  https://doi.org/10.7937/3RAG-D070
+  UPENN-GBM                  CC BY 4.0  https://doi.org/10.7937/TCIA.709X-DN49
+
+TCIA: Clark K, Vendt B, Smith K, et al. The Cancer Imaging Archive (TCIA):
+Maintaining and Operating a Public Information Repository. Journal of Digital
+Imaging 26(6):1045-1057, 2013. https://doi.org/10.1007/s10278-013-9622-7
+
+No image data is distributed with Tomoz. The evaluation downloads the test
+collections listed in lab/manifests/tz1.json from TCIA; their licences and
+citations are recorded there.
