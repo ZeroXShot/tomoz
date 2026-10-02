@@ -1,0 +1,27 @@
+[package]
+name = "tomoz-archive"
+description = "Byte-exact DICOM archives with Tomoz-coded pixel data"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+authors.workspace = true
+keywords = ["dicom", "compression", "lossless", "medical-imaging", "archive"]
+categories = ["compression", "science"]
+
+[dependencies]
+tomoz-codec = { workspace = true, features = ["parallel"] }
+tomoz-dicom.workspace = true
+thiserror.workspace = true
+sha2.workspace = true
+crc32c.workspace = true
+zstd.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+
+[lints]
+workspace = true
