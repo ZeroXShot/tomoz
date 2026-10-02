@@ -1,0 +1,22 @@
+[package]
+name = "tomoz-wasm"
+description = "WebAssembly build of the Tomoz decoder and encoder, with a dependency-free C ABI"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# Single-threaded: WebAssembly modules run in one worker; parallelism, if
+# wanted, comes from several workers decoding slice ranges.
+tomoz-codec.workspace = true
+
+[lints]
+workspace = true
