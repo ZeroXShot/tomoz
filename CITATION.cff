@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use Tomoz, please cite it using the metadata below."
+title: "Tomoz: deterministic learned lossless compression of medical image volumes"
+type: software
+authors:
+  - family-names: "González-Vázquez"
+    given-names: "Joaquin J."
+    orcid: "https://orcid.org/0009-0008-3352-8844"
+repository-code: "https://github.com/ZeroXShot/tomoz"
+license: Apache-2.0
+version: "0.2.0"
+date-released: "2026-10-02"
+abstract: >-
+  Tomoz is a lossless codec for medical image volumes (CT, MR, PET and
+  projection images) based on TZ1, a small integer neural context model with
+  adaptive entropy coding whose output is bit-identical across CPU kernels,
+  thread counts and WebAssembly.
+keywords:
+  - lossless compression
+  - medical imaging
+  - learned compression
+  - DICOM
+  - deterministic inference
